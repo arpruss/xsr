@@ -47,8 +47,12 @@ with open(sys.argv[2],"r") as xml:
                         print("not found: %s 0x%x 0x%08x" % (name, size, crc))
                         continue
                 
-                print("0x%06x %s 0x%x 0x%08x%s" % (offset,name,size,crc, " force" if forcing else ""))
-                z.writestr(name, data[offset:offset+size])
+                if offset < 0:
+                    z.writestr(name, b'\0'*size)
+                    print("zeroed %s 0x%x 0x%08x" % (name,size,crc))
+                else:
+                    print("0x%06x %s 0x%x 0x%08x%s" % (offset,name,size,crc, " force" if forcing else ""))
+                    z.writestr(name, data[offset:offset+size])
             
             
                 
