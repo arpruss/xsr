@@ -4,6 +4,12 @@ import zlib
 import ast
 import zipfile
 
+add = False
+
+if sys.argv[1] == '-a':
+    add = True
+    sys.argv = sys.argv[1:]
+
 force = []
 for i in range(3,len(sys.argv),2):
     force.append((sys.argv[i],ast.literal_eval(sys.argv[i+1])))
@@ -22,7 +28,7 @@ with open(sys.argv[2],"r") as xml:
             print(zipname)
             break
             
-    with zipfile.ZipFile(zipname, "w") as z:
+    with zipfile.ZipFile(zipname, "w" if not add else "a") as z:
         for line in xml:
             line = line.strip()
             if line.startswith('<rom '):
