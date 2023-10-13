@@ -15,3 +15,4 @@ python3 makezip.py -a extracted/RT-XMCU.ROM rthunder.xml
 python3 makezip.py extracted/DigDug.rom digdug.xml dd1a.6 0x5000 136007.109 -1 51xx.bin -1 53xx.bin -1
 mv digdug.zip digdugb.zip 
 python3 makezip.py extracted/Bosconian.rom bosco.c bos3_6.bin 0x5000 prom.2r -1 prom.7h -1 prom.5c -1 bosco.spr 0xc120
+python3 makezip.py extracted/PolePosition1.rom polepos1.c 014-157.rom 0xf000 014-132.rom 0xb000 103.3e 0x7001x2 104.4e 0x7000x2 131.11n 0x22000 014-117.bpr -1
