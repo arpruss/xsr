@@ -17,7 +17,7 @@ with open(sys.argv[2],"r") as xml:
 
     for line in xml:
         line = line.strip()
-        if line.startswith('<game '):
+        if line.startswith('<game ') or line.startswith('<machine '):
             zipname = get('name',line)+'.zip'
             print(zipname)
             break
@@ -29,27 +29,26 @@ with open(sys.argv[2],"r") as xml:
                 name = get('name',line)
                 crc = int(get('crc',line),16)
                 size = int(get('size',line))
-                print("%s 0x%x 0x%08x" % (name,size,crc))
                 if size > len(data):
                     print("does not fit!")
-                offset = None
+                forcing = False
                 for i in range(0,len(data)-size+1):
                     c = zlib.crc32(data[i:i+size])
                     if ( crc & 0xFFFFFFFF ) == (c & 0xFFFFFFFF):
-                        print("found at 0x%x" % i)
                         offset = i
                         break
                 else:
                     for n,i in force:
                         if n == name:
-                            print("forcing 0x%x" % i)
                             offset = i
+                            forcing = True
                             break
                     else:
-                        print("not found")
+                        print("not found: %s 0x%x 0x%08x" % (name, size, crc))
+                        continue
                 
-                if offset is not None:
-                    z.writestr(name, data[offset:offset+size])
+                print("0x%06x %s 0x%x 0x%08x%s" % (offset,name,size,crc, " force" if forcing else ""))
+                z.writestr(name, data[offset:offset+size])
             
             
                 
