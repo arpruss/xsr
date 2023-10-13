@@ -28,3 +28,8 @@ with open(filename, "rb") as f:
         c = zlib.crc32(data[i:i+size])
         if ( crc & 0xFFFFFFFF ) == (c & 0xFFFFFFFF):
             print("Found at 0x%x\n" % i)
+        if i+2*size-1<len(data):
+            c = zlib.crc32(data[i:i+2*size-1:2])
+            if ( crc & 0xFFFFFFFF ) == (c & 0xFFFFFFFF):
+                print("Found at 0x%x with spacing 2\n" % i)
+            

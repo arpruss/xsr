@@ -11,3 +11,7 @@ python3 makezip-separate.py rthunder.xml extracted/*
 python3 makezip.py -a extracted/NS86MCU.ROM rthunder.xml cus60-60a1.mcu 0 rt1_21.f3 -1 rt2_22.h3 -1 # missing sound samples?
 python3 makezip.py -a extracted/RT-COLOR.ROM rthunder.xml
 python3 makezip.py -a extracted/RT-XMCU.ROM rthunder.xml
+# the following work with mame2003-retroarch ; they don't work with 0.131u3 as that need real 5xxx.bin files
+python3 makezip.py extracted/DigDug.rom digdug.xml dd1a.6 0x5000 136007.109 -1 51xx.bin -1 53xx.bin -1
+mv digdug.zip digdugb.zip 
+python3 makezip.py extracted/Bosconian.rom bosco.c bos3_6.bin 0x5000 prom.2r -1 prom.7h -1 prom.5c -1 bosco.spr 0xc120
