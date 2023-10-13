@@ -1,0 +1,62 @@
+<game name="pacman" sourcefile="pacman.c" cloneof="puckman" romof="puckman">
+       	       	<description>Pac-Man (Midway)</description>
+       	       	<year>1980</year>
+       	       	<manufacturer>Namco (Midway license)</manufacturer>
+       	       	<rom name="pacman.6e" size="4096" crc="c1e6ab10" sha1="e87e059c5be45753f7e9f33dff851f16d6751181" region="maincpu" offset="0"/>
+       	       	<rom name="pacman.6f" size="4096" crc="1a6fb2d4" sha1="674d3a7f00d8be5e38b1fdc208ebef5a92d38329" region="maincpu" offset="1000"/>
+       	       	<rom name="pacman.6h" size="4096" crc="bcdd1beb" sha1="8e47e8c2c4d6117d174cdac150392042d3e0a881" region="maincpu" offset="2000"/>
+       	       	<rom name="pacman.6j" size="4096" crc="817d94e3" sha1="d4a70d56bb01d27d094d73db8667ffb00ca69cb9" region="maincpu" offset="3000"/>
+       	       	<rom name="pacman.5e" merge="pacman.5e" size="4096" crc="0c944964" sha1="06ef227747a440831c9a3a613b76693d52a2f0a9" region="gfx1" offset="0"/>
+       	       	<rom name="pacman.5f" merge="pacman.5f" size="4096" crc="958fedf9" sha1="4a937ac02216ea8c96477d4a15522070507fb599" region="gfx1" offset="1000"/>
+       	       	<rom name="82s123.7f" merge="82s123.7f" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5" region="proms" offset="0"/>
+       	       	<rom name="82s126.4a" merge="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6" region="proms" offset="20"/>
+       	       	<rom name="82s126.1m" merge="82s126.1m" size="256" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081" region="namco" offset="0"/>
+       	       	<rom name="82s126.3m" merge="82s126.3m" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" region="namco" offset="100"/>
+       	       	<chip type="cpu" tag="maincpu" name="Z80" clock="3072000"/>
+       	       	<chip type="audio" tag="mono" name="Speaker"/>
+       	       	<chip type="audio" tag="namco" name="Namco" clock="96000"/>
+       	       	<display tag="screen" type="raster" rotate="90" width="288" height="224" refresh="60.606061" pixclock="6144000" htotal="384" hbend="0" hbstart="288" vtotal="264" vbend="0" vbstart="224" />
+       	       	<sound channels="1"/>
+       	       	<input players="2" coins="2">
+       	       	       	<control type="joy" ways="4"/>
+       	       	</input>
+       	       	<dipswitch name="Rack Test (Cheat)" tag="IN0" mask="16">
+       	       	       	<dipvalue name="Off" value="16" default="yes"/>
+       	       	       	<dipvalue name="On" value="0"/>
+       	       	</dipswitch>
+       	       	<dipswitch name="Service Mode" tag="IN1" mask="16">
+       	       	       	<dipvalue name="Off" value="16" default="yes"/>
+       	       	       	<dipvalue name="On" value="0"/>
+       	       	</dipswitch>
+       	       	<dipswitch name="Cabinet" tag="IN1" mask="128">
+       	       	       	<dipvalue name="Upright" value="128" default="yes"/>
+       	       	       	<dipvalue name="Cocktail" value="0"/>
+       	       	</dipswitch>
+       	       	<dipswitch name="Coinage" tag="DSW1" mask="3">
+       	       	       	<dipvalue name="2 Coins/1 Credit" value="3"/>
+       	       	       	<dipvalue name="1 Coin/1 Credit" value="1" default="yes"/>
+       	       	       	<dipvalue name="1 Coin/2 Credits" value="2"/>
+       	       	       	<dipvalue name="Free Play" value="0"/>
+       	       	</dipswitch>
+       	       	<dipswitch name="Lives" tag="DSW1" mask="12">
+       	       	       	<dipvalue name="1" value="0"/>
+       	       	       	<dipvalue name="2" value="4"/>
+       	       	       	<dipvalue name="3" value="8" default="yes"/>
+       	       	       	<dipvalue name="5" value="12"/>
+       	       	</dipswitch>
+       	       	<dipswitch name="Bonus Life" tag="DSW1" mask="48">
+       	       	       	<dipvalue name="10000" value="0" default="yes"/>
+       	       	       	<dipvalue name="15000" value="16"/>
+       	       	       	<dipvalue name="20000" value="32"/>
+       	       	       	<dipvalue name="None" value="48"/>
+       	       	</dipswitch>
+       	       	<dipswitch name="Difficulty" tag="DSW1" mask="64">
+       	       	       	<dipvalue name="Normal" value="64" default="yes"/>
+       	       	       	<dipvalue name="Hard" value="0"/>
+       	       	</dipswitch>
+       	       	<dipswitch name="Ghost Names" tag="DSW1" mask="128">
+       	       	       	<dipvalue name="Normal" value="128" default="yes"/>
+       	       	       	<dipvalue name="Alternate" value="0"/>
+       	       	</dipswitch>
+       	       	<driver status="good" emulation="good" color="good" sound="good" graphic="good" savestate="supported" palettesize="512"/>
+       	</game>

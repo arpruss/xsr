@@ -1,0 +1,18 @@
+<game name="mspacmab" sourcefile="pacman.c">
+		<description>Ms. Pac-Man (bootleg)</description>
+		<year>1981</year>
+		<manufacturer>bootleg</manufacturer>
+		<rom name="5e" size="4096" crc="5c281d01" sha1="5e8b472b615f12efca3fe792410c23619f067845"/>
+		<rom name="5f" size="4096" crc="615af909" sha1="fd6a1dde780b39aea76bf1c4befa5882573c2ef4"/>
+		<rom name="82s123.7f" size="32" crc="2fc650bd" sha1="8d0268dee78e47c712202b0ec4f1f51109b1f2a5"/>
+		<rom name="82s126.1m" size="256" crc="a9cc86bf" sha1="bbcec0570aeceb582ff8238a4bc8546a23430081"/>
+		<rom name="82s126.3m" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746"/>
+		<rom name="82s126.4a" size="256" crc="3eb3a8e4" sha1="19097b5f60d1030f8b82d9f1d3a241f93e5c75d6"/>
+		<rom name="boot1" size="4096" crc="d16b31b7" sha1="bc2247ec946b639dd1f00bfc603fa157d0baaa97"/>
+		<rom name="boot2" size="4096" crc="0d32de5e" sha1="13ea0c343de072508908be885e6a2a217bbb3047"/>
+		<rom name="boot3" size="4096" crc="1821ee0b" sha1="5ea4d907dbb2690698db72c4e0b5be4d3e9a7786"/>
+		<rom name="boot4" size="4096" crc="165a9dd8" sha1="3022a408118fa7420060e32a760aeef15b8a96cf"/>
+		<rom name="boot5" size="4096" crc="8c3e6de6" sha1="fed6e9a2b210b07e7189a18574f6b8c4ec5bb49b"/>
+		<rom name="boot6" size="4096" crc="368cb165" sha1="387010a0c76319a1eab61b54c9bcb5c66c4b67a1"/>
+	</game>
+    
