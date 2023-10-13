@@ -1,0 +1,19 @@
+      <machine name="mappy" sourcefile="namco/mappy.cpp">^M
+                <description>Mappy (US)</description>^M
+                <year>1983</year>^M
+                <manufacturer>Namco</manufacturer>^M
+                <rom name="mp1-3.3m" size="256" crc="16a9166a" sha1="847cbaf7c88616576c410177e066ae1d792ac0ba"/>^M
+                <rom name="mp1-5.5b" size="32" crc="56531268" sha1="2e356706c07f43eeb67783fb122bdc7fed1b3589"/>^M
+                <rom name="mp1-6.4c" size="256" crc="50765082" sha1="f578e14f15783acb2073644db4a2f0d196cc0957"/>^M
+                <rom name="mp1-7.5k" size="256" crc="5396bd78" sha1="2e387e5d8b8cab005f67f821b4db65d0ae8bd362"/>^M
+                <rom name="mp1_2.1c" size="8192" crc="a958a61c" sha1="e5198703cdf47b2cd7fc9f2a5fde7bf4ab2275db"/>^M
+                <rom name="mp1_4.1k" size="8192" crc="8182dd5b" sha1="f36b57f7f1e79f00b3f07afe1960bca5f5325ee2"/>^M
+                <rom name="mp1_5.3b" size="4096" crc="16498b9f" sha1="76610149c65f955484fef1c033ddc3fed3f4e568"/>^M
+                <rom name="mp1_6.3m" size="8192" crc="f2d9647a" sha1="3cc216793c6a5f73c437ad2524563deb3b5e2890"/>^M
+                <rom name="mp1_7.3n" size="8192" crc="757cf2b6" sha1="8dfbf03953d5219d9eb5fc654ec3392442ba1dc4"/>^M
+                <rom name="mpx_1.1b" size="8192" crc="203766d4" sha1="1dbc4f42d4c16a08240a221bec27dcc3a8dd7461"/>^M
+                <rom name="mpx_3.1d" size="8192" crc="52e6c708" sha1="b9722941438e93325e84691ada4e95620bec73b2"/>^M
+                <device_ref name="mc6809e"/>^M
+                <device_ref name="mc6809e"/>^M
+                <device_ref name="ls259"/>^M
+                

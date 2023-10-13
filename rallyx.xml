@@ -1,0 +1,18 @@
+      <machine name="rallyx" sourcefile="namco/rallyx.cpp">^M
+                <description>Rally X (32k Ver.?)</description>^M
+                <year>1980</year>^M
+                <manufacturer>Namco</manufacturer>^M
+                <rom name="1b" size="4096" crc="5882700d" sha1="b6029e9730f1694894fe8b729ac0ba8d6712dea9"/>^M
+                <rom name="8e" size="4096" crc="277c1de5" sha1="30bc57263e8dad870c501c76bce6f42d69ab9e00"/>^M
+                <rom name="rallyxn.1e" size="4096" crc="ed1eba2b" sha1="82d3a4b34b0ff5cfdb8ca7c18ad5c63d943b8484"/>^M
+                <rom name="rallyxn.1h" size="4096" crc="4f98dd1c" sha1="8a20fadcea76802d1c412ba62086abb846ad54a8"/>^M
+                <rom name="rallyxn.1k" size="4096" crc="9aacccf0" sha1="9b22079972c0f9970d62d62751db4783a87796d5"/>^M
+                <rom name="rx1-1.11n" size="32" crc="c7865434" sha1="70c1c9610ba6f1ead77f347e7132958958bccb31"/>^M
+                <rom name="rx1-2.4n" size="32" crc="8f574815" sha1="4f84162db9d58b64742c67dc689eb665b9862fb3"/>^M
+                <rom name="rx1-3.7k" size="32" crc="b8861096" sha1="26fad384ed7a1a1e0ba719b5578e2dbb09334a25"/>^M
+                <rom name="rx1-4.2m" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746"/>^M
+                <rom name="rx1-5.3p" size="256" crc="4bad7017" sha1="3e6da9d798f5e07fa18d6ce7d0b148be98c766d5"/>^M
+                <rom name="rx1-6.8m" size="256" crc="3c16f62c" sha1="7a3800be410e306cf85753b9953ffc5575afbcd6"/>^M
+                <rom name="rx1-7.8p" size="256" crc="834d4fda" sha1="617864d3df0917a513e8255ad8d96ae7a04da5a1"/>^M
+                <device_ref name="z80"/>^M
+                <device_ref name="ls259"/>^M

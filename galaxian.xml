@@ -1,0 +1,13 @@
+    <machine name="galaxian" sourcefile="galaxian/galaxian.cpp">^M
+                <description>Galaxian (Namco set 1)</description>^M
+                <year>1979</year>^M
+                <manufacturer>Namco</manufacturer>^M
+                <rom name="1h.bin" size="2048" crc="39fb43a4" sha1="4755609bd974976f04855d51e08ec0d62ab4bc07"/>^M
+                <rom name="1k.bin" size="2048" crc="7e3f56a2" sha1="a9795d8b7388f404f3b0e2c6ce15d713a4c5bafa"/>^M
+                <rom name="6l.bpr" size="32" crc="c3ac9467" sha1="f382ad5a34d282056c78a5ec00c30ec43772bae2"/>^M
+                <rom name="7l" size="2048" crc="1b933207" sha1="8b44b0f74420871454e27894d0f004859f9e59a9"/>^M
+                <rom name="galmidw.u" size="2048" crc="745e2d61" sha1="e65f74e35b1bfaccd407e168ea55678ae9b68edf"/>^M
+                <rom name="galmidw.v" size="2048" crc="9c999a40" sha1="02fdcd95d8511e64c0d2b007b874112d53e41045"/>^M
+                <rom name="galmidw.w" size="2048" crc="b5894925" sha1="0046b9ed697a34d088de1aead8bd7cbe526a2396"/>^M
+                <rom name="galmidw.y" size="2048" crc="6b3ca10b" sha1="18d8714e5ef52f63ba8888ecc5a25b17b3bf17d1"/>^M
+                

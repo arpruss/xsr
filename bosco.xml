@@ -1,0 +1,27 @@
+ <machine name="bosco" sourcefile="namco/galaga.cpp">^M
+                <description>Bosconian - Star Destroyer (version 5)</description>^M
+                <year>1981</year>^M
+                <manufacturer>Namco</manufacturer>^M
+                <rom name="bos1-1.1d" size="256" crc="de2316c6" sha1="0e55c56046331888d1d3f0d9823d2ceb203e7d3f"/>^M
+                <rom name="bos1-2.5c" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746"/>^M
+                <rom name="bos1-3.2d" size="32" crc="b88d5ba9" sha1="7b97a38a540b7ca4b7d9ae338ec38b9b1a337846"/>^M
+                <rom name="bos1-4.2r" size="256" crc="9b69b543" sha1="47af3f67e50794e839b74fe61197af2228084efd"/>^M
+                <rom name="bos1-5.4m" size="256" crc="4e15d59c" sha1="3542ead6421d169c3569e121ec2be304e108787c"/>^M
+                <rom name="bos1-6.6b" size="32" crc="d2b96fb0" sha1="54c100ec9d173d7dd48a453ebed5f625053cb6e0"/>^M
+                <rom name="bos1-7.7h" size="32" crc="87d61353" sha1="c7493e52662c921625676a4a4e8cf4371bd938b7"/>^M
+                <rom name="bos1_10.5m" size="4096" crc="e571e959" sha1="9c81d7bec73bc605f7dd9a089171b0f34c4bb09a"/>^M
+                <rom name="bos1_11.5k" size="4096" crc="17ac9511" sha1="266f3fae90d2fe38d109096d352863a52b379899"/>^M
+                <rom name="bos1_13.5e" size="4096" crc="e869219c" sha1="425614cd0642743a82ef9c1aada29774a92203ea"/>^M
+                <rom name="bos1_14.5d" size="4096" crc="a956d3c5" sha1="c5a9d7b1f9b4acda8fb9762414e085cb5fb80c9e"/>^M
+                <rom name="bos1_7.2c" size="4096" crc="d45a4911" sha1="547236adca9174f5cc0ec05b9649618bb92ba630"/>^M
+                <rom name="bos1_9.5n" size="4096" crc="09acc978" sha1="2b264aaeb6eba70ad91593413dca733990e5467b"/>^M
+                <rom name="bos5_1.3p" size="4096" crc="b1482ad1" sha1="32d0402fc4882cae2c3655f24087f9f1911f99c1"/>^M
+                <rom name="bos5_2.3m" size="4096" crc="e0828ef8" sha1="2633c7518bf0918f33dac8fbed7aa7053a4793f0"/>^M
+                <rom name="bos5_3.2m" size="4096" crc="229edd51" sha1="6e34837b1d18637b94b3e772ff1b61ffe70e8fcc"/>^M
+                <rom name="bos5_4.2l" size="4096" crc="928a39a0" sha1="dfc5a7ff62a0eabc900b43ef6b8e86e4d46125fe"/>^M
+                <rom name="bos5_5.3f" size="4096" crc="84f7c1ea" sha1="53a1242490575938fca9e738546c93edf82ad7d3"/>^M
+                <rom name="bos5_6.3j" size="4096" crc="7fa34d5e" sha1="c99feb051ab62ef3f7278a411938cd09e731fc19"/>^M
+                <device_ref name="z80"/>^M
+                <device_ref name="z80"/>^M
+                <device_ref name="z80"/>^M
+                <device_ref name="ls259"/>^M
