@@ -16,3 +16,4 @@ python3 makezip.py extracted/DigDug.rom digdug.xml dd1a.6 0x5000 136007.109 -1 5
 mv digdug.zip digdugb.zip 
 python3 makezip.py extracted/Bosconian.rom bosco.c bos3_6.bin 0x5000 prom.2r -1 prom.7h -1 prom.5c -1 bosco.spr 0xc120
 python3 makezip.py extracted/PolePosition1.rom polepos1.c 014-157.rom 0xf000 014-132.rom 0xb000 103.3e 0x7001x2 104.4e 0x7000x2 131.11n 0x22000 014-117.bpr -1
+pypy3 makezip.py extracted/PolePosition2.rom poleps2a.c 178.3e 0x7000 179.4e 0x9000 184.3d 0xb000 185.4d 0xd000 172.7n 0xf000 131.11n 0x26000 014-110.rom 0x02e100 014-111.rom 0x030100 014-117.bpr -1
