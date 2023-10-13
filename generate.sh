@@ -6,3 +6,4 @@ python3 makezip.py extracted/RallyX.rom rallyx.xml rallyxn.1e 0x1000 rallyxn.1k 
 python3 makezip.py extracted/SkyKid.rom skykid.xml
 python3 makezipfiles.py dspirit.xml extracted/DR*ROM extracted/*MCU*ROM
 python3 makezip-separate.py galaga88.xml extracted/G8* extracted/*MC*
+python3 makezip-separate.py pacmania.xml extracted/PM* extracted/*MC*

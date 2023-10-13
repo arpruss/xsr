@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<!DOCTYPE mame [
+<!ELEMENT mame (machine+)>
+	<!ATTLIST mame build CDATA #IMPLIED>
+	<!ATTLIST mame debug (yes|no) "no">
+	<!ATTLIST mame mameconfig CDATA #REQUIRED>
+	<!ELEMENT machine (description, year?, manufacturer?, biosset*, rom*, disk*, device_ref*, sample*, chip*, display*, sound?, input?, dipswitch*, configuration*, port*, adjuster*, driver?, feature*, device*, slot*, softwarelist*, ramoption*)>
+		<!ATTLIST machine name CDATA #REQUIRED>
+		<!ATTLIST machine sourcefile CDATA #IMPLIED>
+		<!ATTLIST machine isbios (yes|no) "no">
+		<!ATTLIST machine isdevice (yes|no) "no">
+		<!ATTLIST machine ismechanical (yes|no) "no">
+		<!ATTLIST machine runnable (yes|no) "yes">
+		<!ATTLIST machine cloneof CDATA #IMPLIED>
+		<!ATTLIST machine romof CDATA #IMPLIED>
+		<!ATTLIST machine sampleof CDATA #IMPLIED>
+		<!ELEMENT description (#PCDATA)>
+		<!ELEMENT year (#PCDATA)>
+		<!ELEMENT manufacturer (#PCDATA)>
+		<!ELEMENT biosset EMPTY>
+			<!ATTLIST biosset name CDATA #REQUIRED>
+			<!ATTLIST biosset description CDATA #REQUIRED>
+			<!ATTLIST biosset default (yes|no) "no">
+		<!ELEMENT rom EMPTY>
+			<!ATTLIST rom name CDATA #REQUIRED>
+			<!ATTLIST rom bios CDATA #IMPLIED>
+			<!ATTLIST rom size CDATA #REQUIRED>
+			<!ATTLIST rom crc CDATA #IMPLIED>
+			<!ATTLIST rom sha1 CDATA #IMPLIED>
+			<!ATTLIST rom merge CDATA #IMPLIED>
+			<!ATTLIST rom region CDATA #IMPLIED>
+			<!ATTLIST rom offset CDATA #IMPLIED>
+			<!ATTLIST rom status (baddump|nodump|good) "good">
+			<!ATTLIST rom optional (yes|no) "no">
+		<!ELEMENT disk EMPTY>
+			<!ATTLIST disk name CDATA #REQUIRED>
+			<!ATTLIST disk sha1 CDATA #IMPLIED>
+			<!ATTLIST disk merge CDATA #IMPLIED>
+			<!ATTLIST disk region CDATA #IMPLIED>
+			<!ATTLIST disk index CDATA #IMPLIED>
+			<!ATTLIST disk writable (yes|no) "no">
+			<!ATTLIST disk status (baddump|nodump|good) "good">
+			<!ATTLIST disk optional (yes|no) "no">
+		<!ELEMENT device_ref EMPTY>
+			<!ATTLIST device_ref name CDATA #REQUIRED>
+		<!ELEMENT sample EMPTY>
+			<!ATTLIST sample name CDATA #REQUIRED>
+		<!ELEMENT chip EMPTY>
+			<!ATTLIST chip name CDATA #REQUIRED>
+			<!ATTLIST chip tag CDATA #IMPLIED>
+			<!ATTLIST chip type (cpu|audio) #REQUIRED>
+			<!ATTLIST chip clock CDATA #IMPLIED>
+		<!ELEMENT display EMPTY>
+			<!ATTLIST display tag CDATA #IMPLIED>
+			<!ATTLIST display type (raster|vector|lcd|svg|unknown) #REQUIRED>
+			<!ATTLIST display rotate (0|90|180|270) #IMPLIED>
+			<!ATTLIST display flipx (yes|no) "no">
+			<!ATTLIST display width CDATA #IMPLIED>
+			<!ATTLIST display height CDATA #IMPLIED>
+			<!ATTLIST display refresh CDATA #REQUIRED>
+			<!ATTLIST display pixclock CDATA #IMPLIED>
+			<!ATTLIST display htotal CDATA #IMPLIED>
+			<!ATTLIST display hbend CDATA #IMPLIED>
+			<!ATTLIST display hbstart CDATA #IMPLIED>
+			<!ATTLIST display vtotal CDATA #IMPLIED>
+			<!ATTLIST display vbend CDATA #IMPLIED>
+			<!ATTLIST display vbstart CDATA #IMPLIED>
+		<!ELEMENT sound EMPTY>
+			<!ATTLIST sound channels CDATA #REQUIRED>
+		<!ELEMENT condition EMPTY>
+			<!ATTLIST condition tag CDATA #REQUIRED>
+			<!ATTLIST condition mask CDATA #REQUIRED>
+			<!ATTLIST condition relation (eq|ne|gt|le|lt|ge) #REQUIRED>
+			<!ATTLIST condition value CDATA #REQUIRED>
+		<!ELEMENT input (control*)>
+			<!ATTLIST input service (yes|no) "no">
+			<!ATTLIST input tilt (yes|no) "no">
+			<!ATTLIST input players CDATA #REQUIRED>
+			<!ATTLIST input coins CDATA #IMPLIED>
+			<!ELEMENT control EMPTY>
+				<!ATTLIST control type CDATA #REQUIRED>
+				<!ATTLIST control player CDATA #IMPLIED>
+				<!ATTLIST control buttons CDATA #IMPLIED>
+				<!ATTLIST control reqbuttons CDATA #IMPLIED>
+				<!ATTLIST control minimum CDATA #IMPLIED>
+				<!ATTLIST control maximum CDATA #IMPLIED>
+				<!ATTLIST control sensitivity CDATA #IMPLIED>
+				<!ATTLIST control keydelta CDATA #IMPLIED>
+				<!ATTLIST control reverse (yes|no) "no">
+				<!ATTLIST control ways CDATA #IMPLIED>
+				<!ATTLIST control ways2 CDATA #IMPLIED>
+				<!ATTLIST control ways3 CDATA #IMPLIED>
+		<!ELEMENT dipswitch (condition?, diplocation*, dipvalue*)>
+			<!ATTLIST dipswitch name CDATA #REQUIRED>
+			<!ATTLIST dipswitch tag CDATA #REQUIRED>
+			<!ATTLIST dipswitch mask CDATA #REQUIRED>
+			<!ELEMENT diplocation EMPTY>
+				<!ATTLIST diplocation name CDATA #REQUIRED>
+				<!ATTLIST diplocation number CDATA #REQUIRED>
+				<!ATTLIST diplocation inverted (yes|no) "no">
+			<!ELEMENT dipvalue (condition?)>
+				<!ATTLIST dipvalue name CDATA #REQUIRED>
+				<!ATTLIST dipvalue value CDATA #REQUIRED>
+				<!ATTLIST dipvalue default (yes|no) "no">
+		<!ELEMENT configuration (condition?, conflocation*, confsetting*)>
+			<!ATTLIST configuration name CDATA #REQUIRED>
+			<!ATTLIST configuration tag CDATA #REQUIRED>
+			<!ATTLIST configuration mask CDATA #REQUIRED>
+			<!ELEMENT conflocation EMPTY>
+				<!ATTLIST conflocation name CDATA #REQUIRED>
+				<!ATTLIST conflocation number CDATA #REQUIRED>
+				<!ATTLIST conflocation inverted (yes|no) "no">
+			<!ELEMENT confsetting (condition?)>
+				<!ATTLIST confsetting name CDATA #REQUIRED>
+				<!ATTLIST confsetting value CDATA #REQUIRED>
+				<!ATTLIST confsetting default (yes|no) "no">
+		<!ELEMENT port (analog*)>
+			<!ATTLIST port tag CDATA #REQUIRED>
+			<!ELEMENT analog EMPTY>
+				<!ATTLIST analog mask CDATA #REQUIRED>
+		<!ELEMENT adjuster (condition?)>
+			<!ATTLIST adjuster name CDATA #REQUIRED>
+			<!ATTLIST adjuster default CDATA #REQUIRED>
+		<!ELEMENT driver EMPTY>
+			<!ATTLIST driver status (good|imperfect|preliminary) #REQUIRED>
+			<!ATTLIST driver emulation (good|imperfect|preliminary) #REQUIRED>
+			<!ATTLIST driver cocktail (good|imperfect|preliminary) #IMPLIED>
+			<!ATTLIST driver savestate (supported|unsupported) #REQUIRED>
+			<!ATTLIST driver requiresartwork (yes|no) "no">
+			<!ATTLIST driver unofficial (yes|no) "no">
+			<!ATTLIST driver nosoundhardware (yes|no) "no">
+			<!ATTLIST driver incomplete (yes|no) "no">
+		<!ELEMENT feature EMPTY>
+			<!ATTLIST feature type (protection|timing|graphics|palette|sound|capture|camera|microphone|controls|keyboard|mouse|media|disk|printer|tape|punch|drum|rom|comms|lan|wan) #REQUIRED>
+			<!ATTLIST feature status (unemulated|imperfect) #IMPLIED>
+			<!ATTLIST feature overall (unemulated|imperfect) #IMPLIED>
+		<!ELEMENT device (instance?, extension*)>
+			<!ATTLIST device type CDATA #REQUIRED>
+			<!ATTLIST device tag CDATA #IMPLIED>
+			<!ATTLIST device fixed_image CDATA #IMPLIED>
+			<!ATTLIST device mandatory CDATA #IMPLIED>
+			<!ATTLIST device interface CDATA #IMPLIED>
+			<!ELEMENT instance EMPTY>
+				<!ATTLIST instance name CDATA #REQUIRED>
+				<!ATTLIST instance briefname CDATA #REQUIRED>
+			<!ELEMENT extension EMPTY>
+				<!ATTLIST extension name CDATA #REQUIRED>
+		<!ELEMENT slot (slotoption*)>
+			<!ATTLIST slot name CDATA #REQUIRED>
+			<!ELEMENT slotoption EMPTY>
+				<!ATTLIST slotoption name CDATA #REQUIRED>
+				<!ATTLIST slotoption devname CDATA #REQUIRED>
+				<!ATTLIST slotoption default (yes|no) "no">
+		<!ELEMENT softwarelist EMPTY>
+			<!ATTLIST softwarelist tag CDATA #REQUIRED>
+			<!ATTLIST softwarelist name CDATA #REQUIRED>
+			<!ATTLIST softwarelist status (original|compatible) #REQUIRED>
+			<!ATTLIST softwarelist filter CDATA #IMPLIED>
+		<!ELEMENT ramoption (#PCDATA)>
+			<!ATTLIST ramoption name CDATA #REQUIRED>
+			<!ATTLIST ramoption default CDATA #IMPLIED>
+]>
+
+<mame build="0.252 (mame0252)" debug="no" mameconfig="10">
+	<machine name="pacmania" sourcefile="namco/namcos1.cpp">
+		<description>Pac-Mania</description>
+		<year>1987</year>
+		<manufacturer>Namco</manufacturer>
+		<rom name="pn2_s0.bin" size="65536" crc="c10370fa" sha1="f819a31075d3c8df5deee2919cd446b9e678c47d" region="audiocpu" offset="0"/>
+		<rom name="pn2_s1.bin" size="65536" crc="f761ed5a" sha1="1487932c86a6094ed01d5032904fd7ae3435d09c" region="audiocpu" offset="10000"/>
+		<rom name="pn_prg-6.bin" size="131072" crc="fe94900c" sha1="5ce726baafc5ed24ea4cae33232c97637afb486b" region="user1" offset="300000"/>
+		<rom name="pn2_p7.bin" size="65536" crc="462fa4fd" sha1="b27bee1ac64ac204c85703c3822de7dbda11b75e" region="user1" offset="380000"/>
+		<rom name="cus64-64a1.mcu" size="4096" crc="ffb5c0bd" sha1="7a38c0cc2553c627f4ec507fb6e807cf7d537c02" region="mcu" offset="0"/>
+		<rom name="pn2_v0.bin" size="65536" crc="1ad5788f" sha1="f6b1ccdcc3db11c0ab83e3ff24e772cd2b491468" region="voice" offset="0"/>
+		<rom name="pn2_c8.bin" size="65536" crc="f3afd65d" sha1="51daefd8685b49c464130b9e7d93e31cfdda724e" region="c123tmap:mask" offset="0"/>
+		<rom name="pn_chr-0.bin" size="131072" crc="7c57644c" sha1="77d9cc9ffbed47a941e4c5e5645d7d1126f6c302" region="c123tmap" offset="0"/>
+		<rom name="pn_chr-1.bin" size="131072" crc="7eaa67ed" sha1="4ad6cfa31d781fa7169663bbc319fc79d8965290" region="c123tmap" offset="20000"/>
+		<rom name="pn_chr-2.bin" size="131072" crc="27e739ac" sha1="be9dbd22d988b76f7044328e2056c3f26b703401" region="c123tmap" offset="40000"/>
+		<rom name="pn_chr-3.bin" size="131072" crc="1dfda293" sha1="fa01b0b8a820c1d24ff0f84b857d2784f0dac1cf" region="c123tmap" offset="60000"/>
+		<rom name="pn_obj-0.bin" size="131072" crc="fda57e8b" sha1="16a72585268159d24f881dbb1aa6ae82bcc4bde7" region="sprite" offset="0"/>
+		<rom name="pnx_obj1.bin" size="131072" crc="4c08affe" sha1="f8f60fdc31779e2abe496e36ba0e4f27546cbc54" region="sprite" offset="20000"/>
+		<device_ref name="mc6809e"/>
+		<device_ref name="mc6809e"/>
+		<device_ref name="mc6809e"/>
+		<device_ref name="hd63701v0"/>
+		<device_ref name="namco_c117"/>
+		<device_ref name="watchdog"/>
+		<device_ref name="nvram"/>
+		<device_ref name="ls157"/>
+		<device_ref name="screen"/>
+		<device_ref name="gfxdecode"/>
+		<device_ref name="namco_c116"/>
+		<device_ref name="namco_c123tmap"/>
+		<device_ref name="speaker"/>
+		<device_ref name="speaker"/>
+		<device_ref name="ym2151"/>
+		<device_ref name="namco_cus30"/>
+		<device_ref name="dac_8bit_r2r"/>
+		<device_ref name="dac_8bit_r2r"/>
+		<chip type="cpu" tag="maincpu" name="Motorola MC6809E" clock="1536000"/>
+		<chip type="cpu" tag="subcpu" name="Motorola MC6809E" clock="1536000"/>
+		<chip type="cpu" tag="audiocpu" name="Motorola MC6809E" clock="1536000"/>
+		<chip type="cpu" tag="mcu" name="Hitachi HD63701V0" clock="6144000"/>
+		<chip type="audio" tag="lspeaker" name="Speaker"/>
+		<chip type="audio" tag="rspeaker" name="Speaker"/>
+		<chip type="audio" tag="ymsnd" name="YM2151 OPM" clock="3579545"/>
+		<chip type="audio" tag="namco" name="Namco CUS30" clock="12000"/>
+		<chip type="audio" tag="dac0" name="8-Bit R-2R DAC"/>
+		<chip type="audio" tag="dac1" name="8-Bit R-2R DAC"/>
+		<display tag="screen" type="raster" rotate="270" width="288" height="224" refresh="60.606061" pixclock="6144000" htotal="384" hbend="73" hbstart="361" vtotal="264" vbend="16" vbstart="240" />
+		<sound channels="2"/>
+		<input players="2" coins="2" service="yes">
+			<control type="joy" player="1" buttons="3" ways="8"/>
+			<control type="joy" player="2" buttons="3" ways="8"/>
+		</input>
+		<dipswitch name="Service Mode" tag="DIPSW" mask="1">
+			<diplocation name="SW" number="1"/>
+			<dipvalue name="Off" value="1" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Freeze" tag="DIPSW" mask="2">
+			<diplocation name="SW" number="2"/>
+			<dipvalue name="Off" value="2" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Kick Watchdog in IRQ" tag="DIPSW" mask="4">
+			<diplocation name="SW" number="3"/>
+			<dipvalue name="No" value="4" default="yes"/>
+			<dipvalue name="Yes" value="0"/>
+		</dipswitch>
+		<dipswitch name="Unknown" tag="DIPSW" mask="8">
+			<diplocation name="SW" number="4"/>
+			<dipvalue name="Off" value="8" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Auto Data Sampling" tag="DIPSW" mask="16">
+			<diplocation name="SW" number="5"/>
+			<dipvalue name="Off" value="16" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Unknown" tag="DIPSW" mask="32">
+			<diplocation name="SW" number="6"/>
+			<dipvalue name="Off" value="32" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Unknown" tag="DIPSW" mask="64">
+			<diplocation name="SW" number="7"/>
+			<dipvalue name="Off" value="64" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<dipswitch name="Unknown" tag="DIPSW" mask="128">
+			<diplocation name="SW" number="8"/>
+			<dipvalue name="Off" value="128" default="yes"/>
+			<dipvalue name="On" value="0"/>
+		</dipswitch>
+		<port tag=":COIN">
+		</port>
+		<port tag=":CONTROL0">
+		</port>
+		<port tag=":CONTROL1">
+		</port>
+		<port tag=":DIPSW">
+		</port>
+		<driver status="good" emulation="good" savestate="supported"/>
+	</machine>
+	<machine name="dac_8bit_r2r" sourcefile="devices/sound/dac.h" isdevice="yes" runnable="no">
+		<description>8-Bit R-2R DAC</description>
+		<sound channels="0"/>
+	</machine>
+	<machine name="gfxdecode" sourcefile="emu/drawgfx.cpp" isdevice="yes" runnable="no">
+		<description>gfxdecode</description>
+	</machine>
+	<machine name="hd63701v0" sourcefile="devices/cpu/m6800/m6801.cpp" isdevice="yes" runnable="no">
+		<description>Hitachi HD63701V0</description>
+	</machine>
+	<machine name="ls157" sourcefile="devices/machine/74157.cpp" isdevice="yes" runnable="no">
+		<description>74LS157 Quad 2-to-1 Multiplexer</description>
+	</machine>
+	<machine name="mc6809e" sourcefile="devices/cpu/m6809/m6809.cpp" isdevice="yes" runnable="no">
+		<description>Motorola MC6809E</description>
+	</machine>
+	<machine name="namco_c116" sourcefile="mame/namco/namco_c116.cpp" isdevice="yes" runnable="no">
+		<description>Namco C116 Video Controller</description>
+	</machine>
+	<machine name="namco_c117" sourcefile="mame/namco/c117.cpp" isdevice="yes" runnable="no">
+		<description>Namco C117 MMU</description>
+		<device_ref name="watchdog"/>
+	</machine>
+	<machine name="namco_c123tmap" sourcefile="mame/namco/namco_c123tmap.cpp" isdevice="yes" runnable="no">
+		<description>Namco C123 (4x + 2x Tilemaps)</description>
+	</machine>
+	<machine name="namco_cus30" sourcefile="devices/sound/namco.cpp" isdevice="yes" runnable="no">
+		<description>Namco CUS30</description>
+		<sound channels="0"/>
+	</machine>
+	<machine name="nvram" sourcefile="devices/machine/nvram.cpp" isdevice="yes" runnable="no">
+		<description>NVRAM</description>
+	</machine>
+	<machine name="screen" sourcefile="emu/screen.cpp" isdevice="yes" runnable="no">
+		<description>Video Screen</description>
+	</machine>
+	<machine name="speaker" sourcefile="emu/speaker.cpp" isdevice="yes" runnable="no">
+		<description>Speaker</description>
+		<sound channels="1"/>
+	</machine>
+	<machine name="watchdog" sourcefile="devices/machine/watchdog.cpp" isdevice="yes" runnable="no">
+		<description>Watchdog Timer</description>
+	</machine>
+	<machine name="ym2151" sourcefile="devices/sound/ymopm.cpp" isdevice="yes" runnable="no">
+		<description>YM2151 OPM</description>
+		<sound channels="0"/>
+	</machine>
+</mame>
