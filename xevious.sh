@@ -1,0 +1,1 @@
+python3 makezip.py extracted/Xevious.rom xevious.xml xvi-1.5n -1 xvi-8.6a 0x15000 xvi-9.6d 0x15100 xvi-10.6e 0x15200 xvi-7.4h 0x15300 xvi-6.4f 0x15500 xvi-4.3l 0x15700 xvi-5.3m 0x15900 xvi-2.7n 0x15b00 xvi-3.1f -1
