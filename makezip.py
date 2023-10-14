@@ -8,6 +8,7 @@ import os
 if len(sys.argv)<3:
     print("python3 makezip.py [-o outdir] [-a] game.rom game.xml|game.c [romname1 offset1 ...]")
     print(" -a : adds to zip")
+    print(" -s : slow but precise")
     print(" romname1 offset1: if romname1 can't be found in game.rom, force it to be at offset1")
     print(" offsets are of the form: N[x2][h|l]")
     print(" where N is a number (e.g., 16 or 0x10)")
@@ -23,6 +24,7 @@ MODES = (lambda x:x, lambda x:x&0xf, lambda x:x>>4)
 
 outdir = ""
 add = False
+slow = False
 
 while True:
     if sys.argv[1] == '-o':
@@ -31,6 +33,10 @@ while True:
         continue
     if sys.argv[1] == '-a':
         add = True
+        sys.argv = sys.argv[1:]
+        continue
+    if sys.argv[1] == '-s':
+        slow = True
         sys.argv = sys.argv[1:]
         continue
     break
@@ -95,7 +101,7 @@ with open(sys.argv[2],"r") as xml:
                 spacing = 1
                 offset = None
                 for j in range(len(MODES)):
-                    for i in range(0,len(data)-size+1):
+                    for i in range(0,len(data)-size+1,1 if slow else 0x10):
                         c = zlib.crc32(bytes(map(MODES[j],data[i:i+size])))
                         if ( crc & 0xFFFFFFFF ) == (c & 0xFFFFFFFF):
                             offset = i
@@ -105,7 +111,7 @@ with open(sys.argv[2],"r") as xml:
                         break
                 else:
                     for j in range(len(MODES)):
-                        for i in range(0,len(data)-2*size+1):
+                        for i in range(0,len(data)-2*size+1,1 if slow else 0x10):
                             c = zlib.crc32(bytes(map(MODES[j],data[i:i+2*size:2])))
                             if ( crc & 0xFFFFFFFF ) == (c & 0xFFFFFFFF):
                                 offset = i
