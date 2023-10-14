@@ -21,6 +21,4 @@ zip old-mame/bosco.zip 5?xx.bin
 python3 makezip.py -o old-mame extracted/PolePosition1.rom polepos1.c 014-157.rom 0xf000 014-132.rom 0xb000 103.3e 0x7001x2 104.4e 0x7000x2 131.11n 0x22000 014-117.bpr -1
 zip old-mame/polepos1.zip 5?xx.bin
 python3 makezip.py -s 0x100 -o old-mame extracted/PolePosition2.rom poleps2a.xml 136014.178 0x7001x2 136014.179 0x7000x2 136014.184 0xb001x2 136014.185 0xb000x2 136014.172 0xf000 131.11n 0x26000 014-110.rom 0x02e100 014-111.rom 0x030100  136014.135 -1  136014.136 -1 136014.117 -1 51xx.bin -1 52xx.bin -1 53xx.bin -1 54xx.bin -1
-python3 makezip.py -o old-mame extracted/Galaga.rom galagab2.c 04e_g05.bin 0x4000 04d_g06.bin 0x5000 gallag.8 0x6000 5c.bin -1 2n.bin 0x9020 1c.bin 0x9120 1d.bin 0x9220 10h_g07.bin -1 prom-2.5c -1
-mv old-mame/galagab2.zip old-mame/galaga.zip
-zip old-mame/galaga.zip 5?xx.bin
+python3 makezip.py -o old-mame extracted/Galaga.rom galaga.xml 54xx.bin zero 51xx.bin zero prom-2.5c zero

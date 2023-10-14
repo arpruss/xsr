@@ -1,18 +1,21 @@
- <machine name="galaga" sourcefile="namco/galaga.cpp">^M
-                <description>Galaga (Namco rev. B)</description>^M
-                <year>1981</year>^M
-                <manufacturer>Namco</manufacturer>^M
-                <rom name="gg1_10.4f" size="4096" crc="dd6f1afc" sha1="c340ed8c25e0979629a9a1730edc762bd72d0cff"/>^M
-                <rom name="gg1_11.4d" size="4096" crc="ad447c80" sha1="e697c180178cabd1d32483c5d8889a40633f7857"/>^M
-                <rom name="gg1_1b.3p" size="4096" crc="ab036c9f" sha1="ca7f5da42d4e76fd89bb0b35198a23c01462fbfe"/>^M
-                <rom name="gg1_2b.3m" size="4096" crc="d9232240" sha1="ab202aa259c3d332ef13dfb8fc8580ce2a5a253d"/>^M
-                <rom name="gg1_3.2m" size="4096" crc="753ce503" sha1="481f443aea3ed3504ec2f3a6bfcf3cd47e2f8f81"/>^M
-                <rom name="gg1_4b.2l" size="4096" crc="499fcc76" sha1="ddb8b121903646c320939c7d13f4aa4ebb130378"/>^M
-                <rom name="gg1_5b.3f" size="4096" crc="bb5caae3" sha1="e957a581463caac27bc37ca2e2a90f27e4f62b6f"/>^M
-                <rom name="gg1_7b.2c" size="4096" crc="d016686b" sha1="44c1a04fba3c7c826ff484185cb881b4b22e6657"/>^M
-                <rom name="gg1_9.4l" size="4096" crc="58b2f47c" sha1="62f1279a784ab2f8218c4137c7accda00e6a3490"/>^M
-                <rom name="prom-1.1d" size="256" crc="7a2815b4" sha1="085ada18c498fdb18ecedef0ea8fe9217edb7b46"/>^M
-                <rom name="prom-2.5c" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746"/>^M
-                <rom name="prom-3.1c" size="256" crc="4a04bb6b" sha1="cdd4bc1013f5c11984fdc4fd10e2d2e27120c1e5"/>^M
-                <rom name="prom-4.2n" size="256" crc="59b6edab" sha1="0281de86c236c88739297ff712e0a4f5c8bf8ab9"/>^M
-                <rom name="prom-5.5n" size="32" crc="54603c6b" sha1="1a6dea13b4af155d9cb5b999a75d4f1eb9c71346"/>^M
+<mame build="0.130 (Mar  9 2009)" debug="no">
+	<game name="galaga" sourcefile="galaga.c">
+		<description>Galaga (Namco rev. B)</description>
+		<year>1981</year>
+		<manufacturer>Namco</manufacturer>
+		<rom name="gg1-1b.3p" size="4096" crc="ab036c9f" sha1="ca7f5da42d4e76fd89bb0b35198a23c01462fbfe" region="maincpu" offset="0"/>
+		<rom name="gg1-2b.3m" size="4096" crc="d9232240" sha1="ab202aa259c3d332ef13dfb8fc8580ce2a5a253d" region="maincpu" offset="1000"/>
+		<rom name="gg1-3.2m" size="4096" crc="753ce503" sha1="481f443aea3ed3504ec2f3a6bfcf3cd47e2f8f81" region="maincpu" offset="2000"/>
+		<rom name="gg1-4b.2l" size="4096" crc="499fcc76" sha1="ddb8b121903646c320939c7d13f4aa4ebb130378" region="maincpu" offset="3000"/>
+		<rom name="gg1-5b.3f" size="4096" crc="bb5caae3" sha1="e957a581463caac27bc37ca2e2a90f27e4f62b6f" region="sub" offset="0"/>
+		<rom name="gg1-7b.2c" size="4096" crc="d016686b" sha1="44c1a04fba3c7c826ff484185cb881b4b22e6657" region="sub2" offset="0"/>
+		<rom name="54xx.bin" size="1024" crc="ee7357e0" sha1="01bdf984a49e8d0cc8761b2cc162fd6434d5afbe" region="54xx" offset="0"/>
+		<rom name="51xx.bin" size="1024" crc="c2f57ef8" sha1="50de79e0d6a76bda95ffb02fcce369a79e6abfec" region="51xx" offset="0"/>
+		<rom name="gg1-9.4l" size="4096" crc="58b2f47c" sha1="62f1279a784ab2f8218c4137c7accda00e6a3490" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="gg1-11.4d" size="4096" crc="ad447c80" sha1="e697c180178cabd1d32483c5d8889a40633f7857" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="gg1-10.4f" size="4096" crc="dd6f1afc" sha1="c340ed8c25e0979629a9a1730edc762bd72d0cff" region="gfx2" dispose="yes" offset="1000"/>
+		<rom name="prom-5.5n" size="32" crc="54603c6b" sha1="1a6dea13b4af155d9cb5b999a75d4f1eb9c71346" region="proms" offset="0"/>
+		<rom name="prom-4.2n" size="256" crc="59b6edab" sha1="0281de86c236c88739297ff712e0a4f5c8bf8ab9" region="proms" offset="20"/>
+		<rom name="prom-3.1c" size="256" crc="4a04bb6b" sha1="cdd4bc1013f5c11984fdc4fd10e2d2e27120c1e5" region="proms" offset="120"/>
+		<rom name="prom-1.1d" size="256" crc="7a2815b4" sha1="085ada18c498fdb18ecedef0ea8fe9217edb7b46" region="namco" offset="0"/>
+		<rom name="prom-2.5c" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" region="namco" offset="100"/>
