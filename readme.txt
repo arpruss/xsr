@@ -14,15 +14,14 @@ file and once in the /NAMCO50.VOL file. If you want the latter copy, you get it 
   sh vol-to-sr.sh /media/cdrom/NAMCO50.VOL NAMCO.SR
 and then extract the SR file with xsr.py.
 
-Then run generate-old-mame.sh to make roms for old mame versions, or
-generate-new-mame.sh for new ones.
+Then run generate-old-mame.sh to make roms for old mame versions, generate-new-mame.sh for 
+new ones and generate-mame2003.sh to make roms for mame2003-libretro.
 
 How old is "old"? Well, at least older than 0.131u3. For as of version 0.131u3, 
 mame started doing more accurate emulations of the Namco 5xxx chips, and so some of
 the roms need dumps of these. But the Namco Anthology doesn't include these dumps,
 so you need an older version of mame for the games where these are needed:
-Dig Dug, Xevious, Pole Position 1 and 2, Bosconian and Galaga. I am using these with 
-RetroPie's mame2003-libretro.
+Dig Dug, Xevious, Pole Position 1 and 2, Bosconian and Galaga. 
 
 Not all the games will work. A lot of the roms in the anthology have checksums that
 don't match anything I could find online, so there was a lot of guesswork as to which

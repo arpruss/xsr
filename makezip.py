@@ -7,8 +7,8 @@ import os
 
 if len(sys.argv)<3:
     print("python3 makezip.py [-o outdir] [-a] game.rom game.xml|game.c [romname1 offset1 ...]")
-    print(" -a : adds to zip")
-    print(" -s : slow but precise")
+    print(" -a   : adds to zip")
+    print(" -s N : bytes to skip when scanning: should be a power of 2; larger is faster, but might miss things; default: 0x10")
     print(" romname1 offset1: if romname1 can't be found in game.rom, force it to be at offset1")
     print(" offsets are of the form: N[x2][h|l]")
     print(" where N is a number (e.g., 16 or 0x10)")
@@ -16,7 +16,6 @@ if len(sys.argv)<3:
     print(" and h (l) indicates that we get the high (low) nibbles only")
     sys.exit(1)
     
-
 NIBBLE_LOW = 1
 NIBBLE_HIGH = 2
 FULL_BYTE = 0
@@ -25,6 +24,7 @@ MODES = (lambda x:x, lambda x:x&0xf, lambda x:x>>4)
 outdir = ""
 add = False
 slow = False
+skip = 0x10
 
 while True:
     if sys.argv[1] == '-o':
@@ -36,11 +36,11 @@ while True:
         sys.argv = sys.argv[1:]
         continue
     if sys.argv[1] == '-s':
-        slow = True
-        sys.argv = sys.argv[1:]
+        skip = ast.literal_eval(sys.argv[2])
+        sys.argv = sys.argv[2:]
         continue
     break
-
+    
 force = []
 for i in range(3,len(sys.argv),2):
     nib = FULL_BYTE
@@ -101,7 +101,7 @@ with open(sys.argv[2],"r") as xml:
                 spacing = 1
                 offset = None
                 for j in range(len(MODES)):
-                    for i in range(0,len(data)-size+1,1 if slow else 0x10):
+                    for i in range(0,len(data)-size+1,skip):
                         c = zlib.crc32(bytes(map(MODES[j],data[i:i+size])))
                         if ( crc & 0xFFFFFFFF ) == (c & 0xFFFFFFFF):
                             offset = i
@@ -110,10 +110,10 @@ with open(sys.argv[2],"r") as xml:
                     if offset is not None:
                         break
                 else:
-                    if slow:
+                    if skip <= 2:
                         r = range(0,len(data)-2*size+1,1)
                     else:
-                        r = tuple(range(0,len(data)-2*size+1,0x10))+tuple(range(1,len(data)-2*size+1,0x10))
+                        r = tuple(range(0,len(data)-2*size+1,skip))+tuple(range(1,len(data)-2*size+1,skip))
                     for i in r:
                         c = zlib.crc32(data[i:i+2*size:2])
                         if ( crc & 0xFFFFFFFF ) == (c & 0xFFFFFFFF):
@@ -140,9 +140,9 @@ with open(sys.argv[2],"r") as xml:
                     print("0x%06x%s%s %s 0x%x 0x%08x%s" % (offset,"x2" if spacing==2 else "",
                         ("","l","h")[mode], name,size,crc, " force" if forcing else ""))
                     if spacing == 1:
-                        z.writestr(name, bytes(map(MODES[j], data[offset:offset+size])))
+                        z.writestr(name, bytes(map(MODES[mode], data[offset:offset+size])))
                     else:
-                        z.writestr(name, bytes(map(MODES[j], data[offset:offset+2*size-1:2])))
+                        z.writestr(name, bytes(map(MODES[mode], data[offset:offset+2*size-1:2])))
             
             
                 
