@@ -25,6 +25,9 @@ outdir = ""
 add = False
 slow = False
 skip = 0x10
+CACHE_MINIMUM = 512
+
+crcCache = {}
 
 while True:
     if sys.argv[1] == '-o':
@@ -55,7 +58,8 @@ for i in range(3,len(sys.argv),2):
         sys.argv[i+1] = sys.argv[i+1][:-2]
     else:
         spacing = 1
-    force.append((sys.argv[i],ast.literal_eval(sys.argv[i+1]),spacing,nib))
+    offset = -1 if sys.argv[i+1] == 'zero' else ast.literal_eval(sys.argv[i+1])
+    force.append((sys.argv[i],offset,spacing,nib))
 
 with open(sys.argv[1],"rb") as rom:
     data = rom.read()
@@ -102,7 +106,12 @@ with open(sys.argv[2],"r") as xml:
                 offset = None
                 for j in range(len(MODES)):
                     for i in range(0,len(data)-size+1,skip):
-                        c = zlib.crc32(bytes(map(MODES[j],data[i:i+size])))
+                        if size >= CACHE_MINIMUM and (i,size,1,MODES[j]) in crcCache:
+                            c = crcCache[(i,size,1,MODES[j])]
+                        else:
+                            c = zlib.crc32(bytes(map(MODES[j],data[i:i+size])))
+                            if size >= CACHE_MINIMUM:
+                                crcCache[(i,size,1,MODES[j])] = c
                         if ( crc & 0xFFFFFFFF ) == (c & 0xFFFFFFFF):
                             offset = i
                             mode = j
@@ -115,7 +124,12 @@ with open(sys.argv[2],"r") as xml:
                     else:
                         r = tuple(range(0,len(data)-2*size+1,skip))+tuple(range(1,len(data)-2*size+1,skip))
                     for i in r:
-                        c = zlib.crc32(data[i:i+2*size:2])
+                        if size >= CACHE_MINIMUM and (i,size,2,FULL_BYTE) in crcCache:
+                            c = crcCache[(i,size,2,FULL_BYTE)]
+                        else:
+                            c = zlib.crc32(data[i:i+2*size:2])
+                            if size >= CACHE_MINIMUM:
+                                crcCache[(i,size,2,FULL_BYTE)] = c
                         if ( crc & 0xFFFFFFFF ) == (c & 0xFFFFFFFF):
                             offset = i
                             spacing = 2
