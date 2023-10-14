@@ -93,14 +93,19 @@ with open(sys.argv[2],"r") as xml:
             break
             
     with zipfile.ZipFile(zipname, "w" if not add else "a") as z:
+        already = tuple(z.namelist()) if add else []
         for line in xml:
             line = line.strip()
             if line.startswith('<rom ') or line.startswith('ROM_LOAD'):
                 name = get('name',line)
+                if name in already:
+                    print("%s already there" % name)
+                    continue
                 crc = int(get('crc',line),16)
                 size = int(get('size',line))
                 if size > len(data):
-                    print("does not fit!")
+                    print("%s does not fit!" % name)
+                    
                 forcing = False
                 spacing = 1
                 offset = None
@@ -137,6 +142,7 @@ with open(sys.argv[2],"r") as xml:
                             break
                     else:
                         for n,i,s,m in force:
+                            print(n,name)
                             if n == name:
                                 offset = i
                                 spacing = s
