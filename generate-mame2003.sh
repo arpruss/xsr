@@ -9,9 +9,9 @@ python3 makezip-separate.py -o mame2003 dspirit.c extracted/DR*ROM extracted/*MC
 python3 makezip-separate.py -o mame2003 galaga88.xml extracted/G8* extracted/*MC*
 python3 makezip-separate.py -o mame2003 pacmania.xml extracted/PM* extracted/*MC*
 python3 makezip-separate.py -o mame2003 rthunder.c extracted/*
-python3 makezip.py -o mame2003 -a extracted/NS86MCU.ROM rthunder.xml cus60-60a1.mcu 0 rt1-21.f3 -1 rt1-22.h3 -1 # missing sound samples?
-python3 makezip.py -o mame2003 -a extracted/RT-COLOR.ROM rthunder.xml
-python3 makezip.py -o mame2003 -a extracted/RT-XMCU.ROM rthunder.xml
+python3 makezip.py -o mame2003 -a extracted/NS86MCU.ROM rthunder.c cus60-60a1.mcu 0 rt1-21.f3 -1 rt1-22.h3 -1 # missing sound samples?
+python3 makezip.py -o mame2003 -a extracted/RT-COLOR.ROM rthunder.c
+python3 makezip.py -o mame2003 -a extracted/RT-XMCU.ROM rthunder.c
 # The following work with mame2003-retroarch ; they don't work with 0.131u3 as that needs real 5xxx.bin files.
 # The 5Xxx.bin files included here are all zeroes, so they won't actually work, but old mame versions emulate the
 # chips so that's OK.
