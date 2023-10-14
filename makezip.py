@@ -50,7 +50,7 @@ for i in range(3,len(sys.argv),2):
     elif sys.argv[i+1].endswith('h'):
         nib = NIBBLE_HIGH
         sys.argv[i+1] = sys.argv[i+1][:-1]
-    if sys.argv[i+1].endswith('x2'):
+    if sys.argv[i+1].endswith('x2') and sys.argv[i+1] != '0x2':
         spacing = 2
         sys.argv[i+1] = sys.argv[i+1][:-2]
     else:
@@ -110,15 +110,16 @@ with open(sys.argv[2],"r") as xml:
                     if offset is not None:
                         break
                 else:
-                    for j in range(len(MODES)):
-                        for i in range(0,len(data)-2*size+1,1 if slow else 0x10):
-                            c = zlib.crc32(bytes(map(MODES[j],data[i:i+2*size:2])))
-                            if ( crc & 0xFFFFFFFF ) == (c & 0xFFFFFFFF):
-                                offset = i
-                                spacing = 2
-                                mode = j
-                                break
-                        if offset is not None:
+                    if slow:
+                        r = range(0,len(data)-2*size+1,1)
+                    else:
+                        r = tuple(range(0,len(data)-2*size+1,0x10))+tuple(range(1,len(data)-2*size+1,0x10))
+                    for i in r:
+                        c = zlib.crc32(data[i:i+2*size:2])
+                        if ( crc & 0xFFFFFFFF ) == (c & 0xFFFFFFFF):
+                            offset = i
+                            spacing = 2
+                            mode = FULL_BYTE
                             break
                     else:
                         for n,i,s,m in force:

@@ -21,5 +21,5 @@ python3 makezip.py -o old-mame extracted/Bosconian.rom bosco.c bos3_6.bin 0x5000
 zip old-mame/bosco.zip 5?xx.bin
 python3 makezip.py -o old-mame extracted/PolePosition1.rom polepos1.c 014-157.rom 0xf000 014-132.rom 0xb000 103.3e 0x7001x2 104.4e 0x7000x2 131.11n 0x22000 014-117.bpr -1
 zip old-mame/polepos1.zip 5?xx.bin
-python3 makezip.py -o old-mame extracted/PolePosition2.rom poleps2a.c 178.3e 0x7000 179.4e 0x9000 184.3d 0xb000 185.4d 0xd000 172.7n 0xf000 131.11n 0x26000 014-110.rom 0x02e100 014-111.rom 0x030100 014-117.bpr -1
+python3 makezip.py -o old-mame extracted/PolePosition2.rom poleps2a.c 178.3e 0x7001x2 179.4e 0x7000x2 184.3d 0xb001x2 185.4d 0xb000x2 172.7n 0xf000 131.11n 0x26000 014-110.rom 0x02e100 014-111.rom 0x030100 014-117.bpr -1
 zip old-mame/poleps2a.zip 5?xx.bin
