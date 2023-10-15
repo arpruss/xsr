@@ -142,7 +142,6 @@ with open(sys.argv[2],"r") as xml:
                             break
                     else:
                         for n,i,s,m in force:
-                            print(n,name)
                             if n == name:
                                 offset = i
                                 spacing = s

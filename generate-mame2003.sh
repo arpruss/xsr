@@ -20,4 +20,5 @@ mv mame2003/digdug.zip mame2003/digdugb.zip
 python3 makezip.py -o mame2003 extracted/Bosconian.rom bosco.c bos3_6.bin 0x5000 prom.2r -1 prom.7h -1 prom.5c -1 bosco.spr 0xc120
 python3 makezip.py -o mame2003 extracted/PolePosition1.rom polepos1.c 014-157.rom 0xf000 014-132.rom 0xb000 103.3e 0x7001x2 104.4e 0x7000x2 131.11n 0x22000 014-117.bpr -1
 python3 makezip.py -o mame2003 extracted/PolePosition2.rom poleps2a.c 178.3e 0x7001x2 179.4e 0x7000x2 184.3d 0xb001x2 185.4d 0xb000x2 172.7n 0xf000 131.11n 0x26000 014-110.rom 0x02e100 014-111.rom 0x030100 014-117.bpr -1
-python3 makezip.py -o mame2003 extracted/Galaga.rom galagab2.c 04e_g05.bin 0x4000 04d_g06.bin 0x5000 gallag.8 0x6000 5c.bin -1 2n.bin 0x9020 1c.bin 0x9120 1d.bin 0x9220 10h_g07.bin -1 prom-2.5c -1
+python3 makezip.py -o mame2003 extracted/Galaga.rom galaga.c 04m_g01.bin 0 04k_g02.bin 0x1000 04j_g03.bin 0x2000 04h_g04.bin 0x3000 04e_g05.bin 0x4000 04d_g06.bin 0x5000 07m_g08.bin 0x6000 07e_g10.bin 0x7000 07h_g09.bin 0x8000 5n.bin 0x9000 2n.bin 0x9120 1c.bin 0x9020 5c.bin zero 1d.bin 0x9220
+#python3 makezip.py -o mame2003 extracted/Galaga.rom galagab2.c 04e_g05.bin 0x4000 04d_g06.bin 0x5000 gallag.8 0x6000 5c.bin -1 2n.bin 0x9020 1c.bin 0x9120 1d.bin 0x9220 10h_g07.bin -1 prom-2.5c -1
