@@ -15,7 +15,8 @@ file and once in the /NAMCO50.VOL file. If you want the latter copy, you get it 
 and then extract the SR file with xsr.py.
 
 Then run generate-old-mame.sh to make roms for old mame versions, generate-new-mame.sh for 
-new ones and generate-mame2003.sh to make roms for mame2003-libretro.
+new ones and generate-mame2003.sh / generate-mame2003plus.sh to make roms for mame2003-libretro / 
+mame2003_plus-libretro.
 
 How old is "old"? Well, at least older than 0.131u3. For as of version 0.131u3, 
 mame started doing more accurate emulations of the Namco 5xxx chips, and so some of
