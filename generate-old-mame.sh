@@ -3,7 +3,7 @@ python3 makezip.py -o old-mame extracted/PacMan.rom pacman.xml pacman.6j 0x1000 
 python3 makezip.py -o old-mame extracted/MsPacMan.rom mspacmab.xml boot4 0x3000 boot6 0x5000 5e 0x6000 82s126.3m -1
 python3 makezip.py -o old-mame extracted/Galaxian.rom galaxian.xml
 python3 makezip.py -o old-mame extracted/Mappy.rom mappy.xml
-python3 makezip.py -o old-mame extracted/RallyX.rom rallyx.xml rallyxn.1e 0x1000 rallyxn.1k 0x3000 rx1-2.4n -1 rx1-3.7k -1 rx1-4.2m -1
+python3 makezip.py -o old-mame extracted/RallyX.rom rallyx-plus.xml rallyxn.1e 0x1000 rallyxn.1k 0x3000 rx1-2.4n -1 rx1-3.7k -1 rx1-4.2m -1 im5623.2m -1
 python3 makezip.py -o old-mame extracted/SkyKid.rom skykid.xml
 python3 makezip-separate.py -o old-mame dspirit.xml extracted/DR*ROM extracted/*MCU*ROM
 python3 makezip-separate.py -o old-mame galaga88.xml extracted/G8* extracted/*MC*

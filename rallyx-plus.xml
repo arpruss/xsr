@@ -1,0 +1,51 @@
+	<game name="rallyx" sourcefile="rallyx.c">
+		<description>Rally X</description>
+		<year>1980</year>
+		<manufacturer>Namco</manufacturer>
+		<rom name="1b" size="4096" crc="5882700d" sha1="b6029e9730f1694894fe8b729ac0ba8d6712dea9" region="cpu1" offset="0"/>
+		<rom name="rallyxn.1e" size="4096" crc="ed1eba2b" sha1="82d3a4b34b0ff5cfdb8ca7c18ad5c63d943b8484" region="cpu1" offset="1000"/>
+		<rom name="rallyxn.1h" size="4096" crc="4f98dd1c" sha1="8a20fadcea76802d1c412ba62086abb846ad54a8" region="cpu1" offset="2000"/>
+		<rom name="rallyxn.1k" size="4096" crc="9aacccf0" sha1="9b22079972c0f9970d62d62751db4783a87796d5" region="cpu1" offset="3000"/>
+		<rom name="8e" size="4096" crc="277c1de5" sha1="30bc57263e8dad870c501c76bce6f42d69ab9e00" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="im5623.8m" size="256" crc="3c16f62c" sha1="7a3800be410e306cf85753b9953ffc5575afbcd6" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="m3-7603.11n" size="32" crc="c7865434" sha1="70c1c9610ba6f1ead77f347e7132958958bccb31" region="proms" offset="0"/>
+		<rom name="im5623.8p" size="256" crc="834d4fda" sha1="617864d3df0917a513e8255ad8d96ae7a04da5a1" region="proms" offset="20"/>
+		<rom name="im5623.3p" size="256" crc="4bad7017" sha1="3e6da9d798f5e07fa18d6ce7d0b148be98c766d5" region="sound1" offset="0"/>
+		<rom name="im5623.2m" size="256" crc="77245b66" sha1="0c4d0bee858b97632411c440bea6948a74759746" region="sound1" offset="100"/>
+		<sample name="bang.wav"/>
+		<chip type="cpu" name="Z80" clock="3072000"/>
+		<chip type="audio" name="Namco 15XX"/>
+		<chip type="audio" name="Samples"/>
+		<video screen="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3" refresh="60.606060"/>
+		<sound channels="1"/>
+		<input players="2" control="joy4way" buttons="1" coins="3"/>
+		<dipswitch name="Cabinet">
+			<dipvalue name="Upright" default="yes"/>
+			<dipvalue name="Cocktail"/>
+		</dipswitch>
+		<dipswitch name="Service Mode">
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="A" default="yes"/>
+			<dipvalue name="B"/>
+			<dipvalue name="C"/>
+			<dipvalue name="None"/>
+		</dipswitch>
+		<dipswitch name="Difficulty">
+			<dipvalue name="1 Car, Medium"/>
+			<dipvalue name="1 Car, Hard"/>
+			<dipvalue name="2 Cars, Easy"/>
+			<dipvalue name="2 Cars, Medium"/>
+			<dipvalue name="2 Cars, Hard"/>
+			<dipvalue name="3 Cars, Easy" default="yes"/>
+			<dipvalue name="3 Cars, Medium"/>
+			<dipvalue name="3 Cars, Hard"/>
+		</dipswitch>
+		<dipswitch name="Coinage">
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+			<dipvalue name="1 Coin/2 Credits"/>
+			<dipvalue name="Free Play"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" graphic="good" palettesize="32"/>
+	</game>
