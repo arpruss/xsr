@@ -1,0 +1,41 @@
+	<game name="polepos1" sourcefile="polepos.c" cloneof="polepos" romof="polepos" sampleof="polepos">
+		<description>Pole Position (Atari version 1)</description>
+		<year>1982</year>
+		<manufacturer>[Namco] (Atari license)</manufacturer>
+		<rom name="136014.105" size="8192" crc="c918c043" sha1="abc1aa3d7b670b5a65b4565dc646cd3c4edf4e6f" region="cpu1" offset="0"/>
+		<rom name="136014.116" merge="136014.116" size="4096" crc="7174bcb7" sha1="460326a6cea201db2df813013c95562a222ea95d" region="cpu1" offset="2000"/>
+		<rom name="136014.101" size="8192" crc="8c2cf172" sha1="57c774afab79599ac3f434113c3170fbb3d42620" region="cpu2" offset="1"/>
+		<rom name="136014.102" size="8192" crc="51018857" sha1="ed28d44d172a01f76461f556229d1fe3a1b779a7" region="cpu2" offset="0"/>
+		<rom name="136014.103" size="8192" crc="af4fc019" sha1="1bb6c0f3ffada2e1df72e1767581f8e8bb2b18f9" region="cpu3" offset="1"/>
+		<rom name="136014.104" size="8192" crc="ba0045f3" sha1="aedb8d8c56407963aa4ffb66243288c8fd6d845a" region="cpu3" offset="0"/>
+		<rom name="136014.132" size="4096" crc="a949aa85" sha1="2d6414196b6071101001128418233e585279ffb9" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="136014.133" size="4096" crc="3f0eb551" sha1="39516d0f72f4e3b03df9451d2dbe081d6c71a508" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="136014.156" size="8192" crc="e7a09c93" sha1="47cc5c6776333bba8454a3df9e2f6e7de4a465e1" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="136014.157" size="8192" crc="dee7d687" sha1="ea34b51c91f6915b74a4a7b53ddb4ff36b72bf66" region="gfx3" dispose="yes" offset="2000"/>
+		<rom name="136014.150" merge="136014.150" size="8192" crc="2e134b46" sha1="0938f5f9f5cc6d7c1096c569449db78dbc42da01" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="136014.152" size="8192" crc="a7e3a1c6" sha1="b7340318afaa4b5f416fe4444899579242cd36c2" region="gfx4" dispose="yes" offset="2000"/>
+		<rom name="136014.154" size="8192" crc="8992d381" sha1="3bf2544dbe88132137acec2c064a104a74139ec7" region="gfx4" dispose="yes" offset="4000"/>
+		<rom name="136014.151" merge="136014.151" size="8192" crc="6f9997d2" sha1="b26d505266ccf23bfd867f881756c3251c80f57b" region="gfx4" dispose="yes" offset="8000"/>
+		<rom name="136014.153" size="8192" crc="6c5c6e68" sha1="dce74ee0e69e0fc0a1942a489c2065381239f0f1" region="gfx4" dispose="yes" offset="a000"/>
+		<rom name="136014.155" size="8192" crc="111896ad" sha1="15032b4c859231373bebfa640421fdcc8ba9d211" region="gfx4" dispose="yes" offset="c000"/>
+		<rom name="136014.158" merge="136014.158" size="8192" crc="ee6b3315" sha1="9cc26c6d3604c0f60d716f86e67e9d9c0487f87d" region="gfx5" offset="0"/>
+		<rom name="136014.159" merge="136014.159" size="8192" crc="6d1e7042" sha1="90113ff0c93ed86d95067290088705bb5e6608d1" region="gfx5" offset="2000"/>
+		<rom name="136014.134" merge="136014.134" size="4096" crc="4e97f101" sha1="f377d053821c74aee93ebcd30a4d43e6156f3cfe" region="gfx5" offset="4000"/>
+		<rom name="136014.131" size="4096" crc="5921777f" sha1="4d9c91a26e0d84fbbe08f748d6e0364311ed6f73" region="gfx6" offset="0"/>
+		<rom name="136014.137" merge="136014.137" size="256" crc="f07ff2ad" sha1="e1f3cb10a03d23f8c1d422acf271dba4e7b98cb1" region="proms" offset="0"/>
+		<rom name="136014.138" merge="136014.138" size="256" crc="adbde7d7" sha1="956ac5117c1e310f554ac705aa2dc24a796c36a5" region="proms" offset="100"/>
+		<rom name="136014.139" merge="136014.139" size="256" crc="ddac786a" sha1="d1860105bf91297533ccc4aa6775987df198d0fa" region="proms" offset="200"/>
+		<rom name="136014.140" merge="136014.140" size="256" crc="1e8d0491" sha1="e8bf1db5c1fb04a35763099965cf5c588240bde5" region="proms" offset="300"/>
+		<rom name="136014.141" merge="136014.141" size="256" crc="0e4fe8a0" sha1="d330b1e5ebccf5bbefcf71486fd80d816de38196" region="proms" offset="400"/>
+		<rom name="136014.142" merge="136014.142" size="256" crc="2d502464" sha1="682b7dd22e51d5db52c0804b7e27e47641dfa6bd" region="proms" offset="500"/>
+		<rom name="136014.143" merge="136014.143" size="256" crc="027aa62c" sha1="c7030d8b64b80e107c446f6fbdd63f560c0a91c0" region="proms" offset="600"/>
+		<rom name="136014.144" merge="136014.144" size="256" crc="1f8d0df3" sha1="b8f17758f114f5e247b65b3f2922ca2660757e66" region="proms" offset="700"/>
+		<rom name="136014.145" merge="136014.145" size="1024" crc="7afc7cfc" sha1="ba2407f6eff124e881b354f13205a4c058b7cf60" region="proms" offset="800"/>
+		<rom name="136014.146" size="1024" crc="ca4ba741" sha1="de93d738bd27e24dbc4a8378d2c120ef8388c261" region="proms" offset="c00"/>
+		<rom name="136014.135" merge="136014.135" size="32" crc="4330a51b" sha1="9531d18ce2de4eda9913d47ef8c5cd8f05791716" region="proms" offset="1000"/>
+		<rom name="136014.136" merge="136014.136" size="32" crc="4330a51b" sha1="9531d18ce2de4eda9913d47ef8c5cd8f05791716" region="proms" offset="1020"/>
+		<rom name="136014.118" merge="136014.118" size="256" crc="8568decc" sha1="0aac1fa082858d4d201e21511c609a989f9a1535" region="sound1" offset="0"/>
+		<rom name="136014.110" merge="136014.110" size="8192" crc="b5ad4d5f" sha1="c07e77a050200d6fe9952031f971ca35f4d15ff8" region="sound2" offset="0"/>
+		<rom name="136014.111" merge="136014.111" size="8192" crc="8fdd2f6f" sha1="3818dc94c60cd78c4212ab7a4367cf3d98166ee6" region="sound2" offset="2000"/>
+		<rom name="136014.106" size="8192" crc="5b4cf05e" sha1="52342572940489175607bbf5b6cfd05ee9b0f004" region="sound3" offset="0"/>
+		<rom name="136014.117" merge="136014.117" size="256" crc="2401c817" sha1="8991b7994513a469e64392fa8f233af5e5f06d54" region="user1" offset="0"/>

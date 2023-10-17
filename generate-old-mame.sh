@@ -18,7 +18,7 @@ python3 makezip.py -o old-mame -a extracted/RT-XMCU.ROM rthunder.xml
 python3 makezip.py -o old-mame extracted/DigDug.rom digdug.xml dd1a.6 0x5000 136007.109 -1 51xx.bin -1 53xx.bin -1
 python3 makezip.py -o old-mame extracted/Bosconian.rom bosco.c bos3_6.bin 0x5000 prom.2r -1 prom.7h -1 prom.5c -1 bosco.spr 0xc120
 zip old-mame/bosco.zip 5?xx.bin
-python3 makezip.py -o old-mame extracted/PolePosition1.rom polepos1.c 014-157.rom 0xf000 014-132.rom 0xb000 103.3e 0x7001x2 104.4e 0x7000x2 131.11n 0x22000 014-117.bpr -1
+python3 makezip.py -o old-mame extracted/PolePosition1.rom polepos1-plus.xml 136014.157 0xf000 136014.132 0xb000 136014.103 0x7001x2 136014.104 0x7000x2 136014.131 0x22000 136014.117 -1 136014.135 -1 136014.136 -1
 zip old-mame/polepos1.zip 5?xx.bin
 python3 makezip.py -s 0x100 -o old-mame extracted/PolePosition2.rom poleps2a.xml 136014.178 0x7001x2 136014.179 0x7000x2 136014.184 0xb001x2 136014.185 0xb000x2 136014.172 0xf000 131.11n 0x26000 014-110.rom 0x02e100 014-111.rom 0x030100  136014.135 -1  136014.136 -1 136014.117 -1 51xx.bin -1 52xx.bin -1 53xx.bin -1 54xx.bin -1
 python3 makezip.py -o old-mame extracted/Galaga.rom galaga.xml 54xx.bin zero 51xx.bin zero prom-2.5c zero
