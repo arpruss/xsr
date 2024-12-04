@@ -1,0 +1,17 @@
+HDR
+
+filename records start at 0x0388
+record length 28
+FILENAMZ 00 EXT ";1" 00 00 
+xx xx xx xx = sequence or -1, max 0000006E (6E * 8 = 0370)
+yy yy yy yy = sequence, increasing if previous xx's are -1, max 00024525 
+zz zz zz zz = size?
+
+yyyyyyyy * 0x800 = offset
+
+754 entries
+
+opwolf.png size 387525 at 0x1057b800
+entry:
+xx xx xx xx  yy yy yy yy  zz zz zz zz
+FF FF FF FF  F7 0A 02 00  C5 E9 05 00
