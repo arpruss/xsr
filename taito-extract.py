@@ -1,5 +1,10 @@
 import os
 import zlib
+import sys
+import ast
+
+offset = 0x388 if len(sys.argv) < 2 else ast.literal_eval(sys.argv[1])
+print("offset %x" % offset)
 
 try:
     os.mkdir('taito/extract')
@@ -8,7 +13,7 @@ except:
 
 with open('taito/FILES.HDR', 'rb') as hdr:
     with open('taito/FILES.DAT', 'rb') as dat:
-        hdr.seek(0x388)
+        hdr.seek(offset)
         while True:
             filename = hdr.read(16)
             if len(filename) < 16:
