@@ -1,0 +1,34 @@
+	<game name="zookeep">
+		<description>Zoo Keeper (set 1)</description>
+		<year>1982</year>
+		<manufacturer>Taito America Corporation</manufacturer>
+		<rom name="za12" size="4096" crc="4e40d8dc" sha1="dd7923dcb55a2a1ae0f2029caf5a8904a9ebe8b1" region="cpu1" offset="8000"/>
+		<rom name="za13" size="4096" crc="eebd5248" sha1="ebe7f8c436bfefa4236f603fbcbd38d2f4cfd2bd" region="cpu1" offset="9000"/>
+		<rom name="za14" size="4096" crc="fab43297" sha1="daa5a780bc9f171da0f6db5319b1519caa09c6c9" region="cpu1" offset="a000"/>
+		<rom name="za15" size="4096" crc="ef8cd67c" sha1="f3a2e12ccfa45eb77c2a6e0d9cc0601b99273fd3" region="cpu1" offset="b000"/>
+		<rom name="za16" size="4096" crc="ccfc15bc" sha1="56ac6e89825fcde9cf7aeb5d0765a02f5474174a" region="cpu1" offset="c000"/>
+		<rom name="za17" size="4096" crc="358013f4" sha1="dd3fae69bf460f89c71e7c78d229dd86605c5950" region="cpu1" offset="d000"/>
+		<rom name="za18" size="4096" crc="37886afe" sha1="a0cc902b2d253466e21c4fbf9d3339069fe79ebe" region="cpu1" offset="e000"/>
+		<rom name="za19" size="4096" crc="bbfb30d9" sha1="bc6bd5525b159bee7b08b6967cd3088b7bd10fee" region="cpu1" offset="f000"/>
+		<rom name="za5" size="4096" crc="dc0c3cbd" sha1="8335cd91bbacc680a3a98a5242d4cb5a6f61b2b5" region="cpu2" offset="a000"/>
+		<rom name="za3" size="4096" crc="cc4d0aee" sha1="05c0025e96b432088b46100051a2c780e46b7457" region="cpu2" offset="10000"/>
+		<rom name="za6" size="4096" crc="27c787dd" sha1="1142790d875573d0c39d846aba4b06946fd2bc88" region="cpu2" offset="b000"/>
+		<rom name="za4" size="4096" crc="ec3b10b1" sha1="44303ab923d776052ca4d2d09a6a4315d67adc4b" region="cpu2" offset="11000"/>
+		<rom name="za7" size="4096" crc="1479f480" sha1="bd0e9eead0f1213eb3b9653c73257bc704346ab0" region="cpu2" offset="c000"/>
+		<rom name="za8" size="4096" crc="4c96cdb2" sha1="67e506462317d882c4e5c2e16318411d4958ac63" region="cpu2" offset="d000"/>
+		<rom name="za9" size="4096" crc="a4f7d9e0" sha1="a958b4d305bb397aa46d8fdab9dc7e472237ca11" region="cpu2" offset="e000"/>
+		<rom name="za10" size="4096" crc="05df1a5a" sha1="30797838c25cca038023c188cd9fa45277c4190d" region="cpu2" offset="f000"/>
+		<rom name="za25" size="4096" crc="779b8558" sha1="7312e63c23d92c9c52e93cc445a718bc8fe35a0a" region="cpu3" offset="d000"/>
+		<rom name="za26" size="4096" crc="60a810ce" sha1="d97e5acea0ef1c208f8e5e95024c83dd6bc9b028" region="cpu3" offset="e000"/>
+		<rom name="za27" size="4096" crc="99ed424e" sha1="e4e543dcb77f153aeb78904d11b95381d039299e" region="cpu3" offset="f000"/>
+		<rom name="za_coin.bin" size="2048" crc="364d3557" sha1="049d0759750c576187053306e07984b1e5877df7" region="cpu4" offset="0"/>
+		<chip type="cpu" name="M6809" clock="1250000"/>
+		<chip type="cpu" name="M6809" clock="1250000"/>
+		<chip type="cpu" soundonly="yes" name="M6802" clock="921600"/>
+		<chip type="cpu" name="M68705" clock="1000000"/>
+		<chip type="audio" name="DAC"/>
+		<video screen="raster" orientation="horizontal" width="256" height="240" aspectx="4" aspecty="3" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="joy4way" buttons="1" coins="3" service="yes" tilt="yes"/>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>

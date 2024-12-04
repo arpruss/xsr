@@ -1,0 +1,22 @@
+	<game name="futspy" sampleof="zaxxon">
+		<description>Future Spy</description>
+		<year>1984</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="fs_snd.u27" size="8192" crc="7578fe7f" sha1="ab42bdf74b07c1ba5337c3d34647d3ee16f9db05" region="cpu1" offset="0"/>
+		<rom name="fs_snd.u28" size="8192" crc="8ade203c" sha1="f095f4019befff7af4203c886ef42357f79592a1" region="cpu1" offset="2000"/>
+		<rom name="fs_snd.u29" size="4096" crc="734299c3" sha1="12acf71d9d00e0e0df29c4d8c397ad407266b364" region="cpu1" offset="4000"/>
+		<rom name="fs_snd.u68" size="2048" crc="305fae2d" sha1="fbe89feff0fb2d4515000d1b73b7c91aac4e0b67" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="fs_snd.u69" size="2048" crc="3c5658c0" sha1="70ac44b9334b086cdecd73f5f7820a0bf8ae2629" region="gfx1" dispose="yes" offset="800"/>
+		<rom name="fs_vid.113" size="8192" crc="36d2bdf6" sha1="c27835055beedf61ba644070f8920b6008d99040" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="fs_vid.112" size="8192" crc="3740946a" sha1="e7579dd91628a811a60a8d8a5b407728b74aa17e" region="gfx2" dispose="yes" offset="2000"/>
+		<rom name="fs_vid.111" size="8192" crc="4cd4df98" sha1="3ae4b2d0a79069e0de81596805bcf1a9ae7912cf" region="gfx2" dispose="yes" offset="4000"/>
+		<rom name="fs_vid.u77" size="16384" crc="1b93c9ec" sha1="4b1d3b7e35d65cc3b96eb4f2e98c59e779bcb1c1" region="gfx3" dispose="yes" offset="0"/>
+		<rom name="fs_vid.u78" size="16384" crc="50e55262" sha1="363acbde7b37a2358b3e53cfc08c9bd5dee73d55" region="gfx3" dispose="yes" offset="4000"/>
+		<rom name="fs_vid.u79" size="16384" crc="bfb02e3e" sha1="f53bcec46b8c7d26e9ab01c821a8d1578b85f786" region="gfx3" dispose="yes" offset="8000"/>
+		<rom name="fs_vid.u91" size="8192" crc="86da01f4" sha1="954e4be1b0e24c8bc88c2b328e3a0e32005bb7b2" region="gfx4" dispose="yes" offset="0"/>
+		<rom name="fs_vid.u90" size="8192" crc="2bd41d2d" sha1="efb74b4bce31c7868ab6438e07b02b0539d35120" region="gfx4" dispose="yes" offset="2000"/>
+		<rom name="fs_vid.u93" size="8192" crc="b82b4997" sha1="263f74aab47fc4e516b2111eaa94beea61c5fbe5" region="gfx4" dispose="yes" offset="4000"/>
+		<rom name="fs_vid.u92" size="8192" crc="af4015af" sha1="6ed01a42d395ada6f2442b68f901fe61b04c8e44" region="gfx4" dispose="yes" offset="6000"/>
+		<rom name="futrprom.u98" size="256" crc="9ba2acaa" sha1="20e0257ca531ddc398b3aab861c7b5c41b659d40" region="proms" offset="0"/>
+		<rom name="futrprom.u72" size="256" crc="f9e26790" sha1="339f27e0126312d35211b5ce533f293b58851c1d" region="proms" offset="100"/>
+		<sample name="03.wav"/>

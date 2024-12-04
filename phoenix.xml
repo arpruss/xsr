@@ -1,0 +1,54 @@
+	<game name="phoenix">
+		<description>Phoenix (Amstar)</description>
+		<year>1980</year>
+		<manufacturer>Amstar</manufacturer>
+		<rom name="ic45" size="2048" crc="9f68086b" sha1="fc3cef299bf03bf0586c4047c6b96ca666846220" region="cpu1" offset="0"/>
+		<rom name="ic46" size="2048" crc="273a4a82" sha1="6f3019a074e73ff50ceb92f655fcf15659f34919" region="cpu1" offset="800"/>
+		<rom name="ic47" size="2048" crc="3d4284b9" sha1="6e69f8f0d537fe89140cd95d2398531d7e93d102" region="cpu1" offset="1000"/>
+		<rom name="ic48" size="2048" crc="cb5d9915" sha1="49bcf55a5721cfcc02c3b811a4b601e35ea576db" region="cpu1" offset="1800"/>
+		<rom name="ic49" size="2048" crc="a105e4e7" sha1="b35142a91b6b7fdf7535202671793393c9f4685f" region="cpu1" offset="2000"/>
+		<rom name="ic50" size="2048" crc="ac5e9ec1" sha1="0402e5241d99759d804291998efd43f37ce99917" region="cpu1" offset="2800"/>
+		<rom name="ic51" size="2048" crc="2eab35b4" sha1="849bf8273317cc869bdd67e50c68399ee8ece81d" region="cpu1" offset="3000"/>
+		<rom name="ic52" size="2048" crc="aff8e9c5" sha1="e4164f85ec12d4d9bcbffba27ab1f51b3599f6d0" region="cpu1" offset="3800"/>
+		<rom name="ic23" size="2048" crc="3c7e623f" sha1="e7ff5fc371664af44785c079e92eeb2d8530187b" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="ic24" size="2048" crc="59916d3b" sha1="71aec70a8e096ed1f0c2297b3ae7dca1b8ecc38d" region="gfx1" dispose="yes" offset="800"/>
+		<rom name="ic39" size="2048" crc="53413e8f" sha1="d772358505b973b10da840d204afb210c0c746ec" region="gfx2" dispose="yes" offset="0"/>
+		<rom name="ic40" size="2048" crc="0be2ba91" sha1="af9243ee23377b632b9b7d0b84d341d06bf22480" region="gfx2" dispose="yes" offset="800"/>
+		<rom name="ic40_b.bin" size="256" crc="79350b25" sha1="57411be4c1d89677f7919ae295446da90612c8a8" region="proms" offset="0"/>
+		<rom name="ic41_a.bin" size="256" crc="e176b768" sha1="e2184dd495ed579f10b6da0b78379e02d7a6229f" region="proms" offset="100"/>
+		<chip type="cpu" name="8085A" clock="2750000"/>
+		<chip type="audio" name="TMS36XX"/>
+		<chip type="audio" name="Custom"/>
+		<video screen="raster" orientation="vertical" width="208" height="248" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="joy8way" buttons="2" coins="1"/>
+		<dipswitch name="Lives">
+			<dipvalue name="3" default="yes"/>
+			<dipvalue name="4"/>
+			<dipvalue name="5"/>
+			<dipvalue name="6"/>
+		</dipswitch>
+		<dipswitch name="Bonus Life">
+			<dipvalue name="3K 30K" default="yes"/>
+			<dipvalue name="4K 40K"/>
+			<dipvalue name="5K 50K"/>
+			<dipvalue name="6K 60K"/>
+		</dipswitch>
+		<dipswitch name="Coinage">
+			<dipvalue name="2 Coins/1 Credit"/>
+			<dipvalue name="1 Coin/1 Credit" default="yes"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Unknown">
+			<dipvalue name="Off" default="yes"/>
+			<dipvalue name="On"/>
+		</dipswitch>
+		<dipswitch name="Cabinet">
+			<dipvalue name="Upright" default="yes"/>
+			<dipvalue name="Cocktail"/>
+		</dipswitch>
+		<driver status="good" color="good" sound="good" palettesize="256"/>
+	</game>

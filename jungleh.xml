@@ -1,0 +1,25 @@
+	<game name="jungleh" cloneof="junglek" romof="junglek">
+		<description>Jungle Hunt (US)</description>
+		<year>1982</year>
+		<manufacturer>Taito America Corporation</manufacturer>
+		<rom name="kn41a" size="4096" crc="6bf118d8" sha1="d6de28766aab90b5dbca7f74612ec8eafd144348" region="cpu1" offset="0"/>
+		<rom name="kn42.bin" size="4096" crc="bade53af" sha1="c3d2cf776598cb2d8684fa0b3ea7af90af9e8dae" region="cpu1" offset="1000"/>
+		<rom name="kn43.bin" merge="kn43.bin" size="4096" crc="a20e5a48" sha1="af961b671dc4c865d0181d08a70b902bb96f29d0" region="cpu1" offset="2000"/>
+		<rom name="kn44.bin" size="4096" crc="44c770d3" sha1="57a1ddc07009f0dbd423cbe111b886e919a8bb0a" region="cpu1" offset="3000"/>
+		<rom name="kn45.bin" size="4096" crc="f60a3d06" sha1="7c387f0aeb9497b026d8838ee6ea7ff11dea506a" region="cpu1" offset="4000"/>
+		<rom name="kn46a" size="4096" crc="ac89c155" sha1="bac17c9828002b644f15933149a205a008a561d3" region="cpu1" offset="5000"/>
+		<rom name="kn47.bin" merge="kn47.bin" size="4096" crc="5c3199e0" sha1="c57dec92998b971d76aecd23674c25cf7b8be667" region="cpu1" offset="6000"/>
+		<rom name="kn48a" size="4096" crc="ef80e931" sha1="b3ddcc37860a2693d45a85970926662cbb96bd0e" region="cpu1" offset="7000"/>
+		<rom name="kn60.bin" merge="kn60.bin" size="4096" crc="1a9c0a26" sha1="82f4cebeba90419e83a00427b671985824babd7a" region="cpu1" offset="11000"/>
+		<rom name="kn57-1.bin" size="4096" crc="62f6763a" sha1="84eadbc5c6a37c53c104e4ac1fd273b6b2a335e5" region="cpu2" offset="0"/>
+		<rom name="kn58-1.bin" size="4096" crc="9ef46c7f" sha1="867d9352cde4d6496f59e790cbbf15302a55364e" region="cpu2" offset="1000"/>
+		<rom name="kn59-1.bin" merge="kn59-1.bin" size="4096" crc="cee485fc" sha1="1e0c52ec6b1d3cfd47247db71bcf3fe476c32039" region="cpu2" offset="2000"/>
+		<rom name="kn49a" size="4096" crc="b139e792" sha1="10c39abc49786154396c00bd35a51b826e5f6bd0" region="gfx1" offset="0"/>
+		<rom name="kn50a" size="4096" crc="1046019f" sha1="b2d3ab8a53ef3ca55165a5bda9be0829f53be6c9" region="gfx1" offset="1000"/>
+		<rom name="kn51a" size="4096" crc="da50c8a4" sha1="de5f9b953f277986679ab958772571d8417a0ce2" region="gfx1" offset="2000"/>
+		<rom name="kn52a" size="4096" crc="0444f06c" sha1="80569807ae36b4c5ad90e9e736ce9d0d0ea486ec" region="gfx1" offset="3000"/>
+		<rom name="kn53a" size="4096" crc="6a17803e" sha1="d7ab6a240bb1ac80d3903cb694e55fd6d3670faa" region="gfx1" offset="4000"/>
+		<rom name="kn54a" size="4096" crc="d41428c7" sha1="8c926db731073313daced31a168da6ac07a6d5cb" region="gfx1" offset="5000"/>
+		<rom name="kn55.bin" merge="kn55.bin" size="4096" crc="70aef58f" sha1="df7454a1c3676181eca698bb3b2ef3253a45ca0f" region="gfx1" offset="6000"/>
+		<rom name="kn56a" size="4096" crc="679c1101" sha1="218cd75f77c858c3714a8f03aea2c7ee88a212dd" region="gfx1" offset="7000"/>
+		<rom name="eb16.22" merge="eb16.22" size="256" crc="b833b5ea" sha1="d233f1bf8a3e6cd876853ffd721b9b64c61c9047" region="proms" offset="0"/>

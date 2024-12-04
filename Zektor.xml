@@ -1,0 +1,30 @@
+	<game name="zektor">
+		<description>Zektor (revision B)</description>
+		<year>1982</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="1611.cpu" size="2048" crc="6245aa23" sha1="815f3c7edad9c290b719a60964085e90e7268112" region="cpu1" offset="0"/>
+		<rom name="1586.rom" size="2048" crc="efeb4fb5" sha1="b337179c01870c953b8d38c20263802e9a7936d3" region="cpu1" offset="800"/>
+		<rom name="1587.rom" size="2048" crc="daa6c25c" sha1="061e390775b6dd24f85d51951267bca4339a3845" region="cpu1" offset="1000"/>
+		<rom name="1588.rom" size="2048" crc="62b67dde" sha1="831bad0f5a601d6859f69c70d0962c970d92db0e" region="cpu1" offset="1800"/>
+		<rom name="1589.rom" size="2048" crc="c2db0ba4" sha1="658773f2b56ea805d7d678e300f9bbc896fbf176" region="cpu1" offset="2000"/>
+		<rom name="1590.rom" size="2048" crc="4d948414" sha1="f60d295b0f8f798126dbfdc197943d8511238390" region="cpu1" offset="2800"/>
+		<rom name="1591.rom" size="2048" crc="b0556a6c" sha1="84b481cc60dc3df3a1cf18b1ece4c70bcc7bb5a1" region="cpu1" offset="3000"/>
+		<rom name="1592.rom" size="2048" crc="750ecadf" sha1="83ddd482230fbf6cf78a054fb4abd5bc8aec3ec8" region="cpu1" offset="3800"/>
+		<rom name="1593.rom" size="2048" crc="34f8850f" sha1="d93594e529aca8d847c9f1e9055f1840f6069fb2" region="cpu1" offset="4000"/>
+		<rom name="1594.rom" size="2048" crc="52b22ab2" sha1="c8f822a1a54081cfc88149c97b4dc19aa745a8d5" region="cpu1" offset="4800"/>
+		<rom name="1595.rom" size="2048" crc="a704d142" sha1="95c1249a8efd1a69972ffd7a4da76a0bca5095d9" region="cpu1" offset="5000"/>
+		<rom name="1596.rom" size="2048" crc="6975e33d" sha1="3f12037edd6f1b803b5f864789f4b88958ac9578" region="cpu1" offset="5800"/>
+		<rom name="1597.rom" size="2048" crc="d48ab5c2" sha1="3f4faf4b131b120b30cd4e73ff34d5cd7ef6c47a" region="cpu1" offset="6000"/>
+		<rom name="1598.rom" size="2048" crc="ab54a94c" sha1="9dd57b4b6e46d46922933128d9786df011c6133d" region="cpu1" offset="6800"/>
+		<rom name="1599.rom" size="2048" crc="c9d4f3a5" sha1="8516914b49fad85222cbdd9a43609834f5d0f13d" region="cpu1" offset="7000"/>
+		<rom name="1600.rom" size="2048" crc="893b7dbc" sha1="136135f0be2e8dddfa0d21a5f4119ee4685c4866" region="cpu1" offset="7800"/>
+		<rom name="1601.rom" size="2048" crc="867bdf4f" sha1="5974d32d878206abd113f74ba20fa5276cf21a6f" region="cpu1" offset="8000"/>
+		<rom name="1602.rom" size="2048" crc="bd447623" sha1="b8d255aeb32096891379330c5b8adf1d151d70c2" region="cpu1" offset="8800"/>
+		<rom name="1603.rom" size="2048" crc="9f8f10e8" sha1="ffe9d872d9011b3233cb06d966852319f9e4cd01" region="cpu1" offset="9000"/>
+		<rom name="1604.rom" size="2048" crc="ad2f0f6c" sha1="494a224905b1dac58b3b50f65a8be986b68b06f2" region="cpu1" offset="9800"/>
+		<rom name="1605.rom" size="2048" crc="e27d7144" sha1="5b82fda797d86e11882d1f9738a59092c5e3e7d8" region="cpu1" offset="a000"/>
+		<rom name="1606.rom" size="2048" crc="7965f636" sha1="5c8720beedab4979a813ce7f0e8961c863973ff7" region="cpu1" offset="a800"/>
+		<rom name="1607.spc" size="2048" crc="b779884b" sha1="ac07e99717a1f51b79f3e43a5d873ebfa0559320" region="cpu2" offset="0"/>
+		<rom name="1608.spc" size="4096" crc="637e2b13" sha1="8a470f9a8a722f7ced340c4d32b4cf6f05b3e848" region="cpu2" offset="800"/>
+		<rom name="1609.spc" size="4096" crc="675ee8e5" sha1="e314482028b8925ad02e833a1d22224533d0a683" region="cpu2" offset="1800"/>
+		<rom name="1610.spc" size="4096" crc="2915c7bd" sha1="3ed98747b5237aa1b3bab6866292370dc2c7655a" region="cpu2" offset="2800"/>

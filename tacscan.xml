@@ -1,0 +1,28 @@
+	<game name="tacscan">
+		<description>Tac/Scan</description>
+		<year>1982</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="1711a" size="2048" crc="0da13158" sha1="256c5441a4841441501c9b7bcf09e0e99e8dd671" region="cpu1" offset="0"/>
+		<rom name="1670c" size="2048" crc="98de6fd5" sha1="f22c215d7558e00366fec5092abb51c670468f8c" region="cpu1" offset="800"/>
+		<rom name="1671a" size="2048" crc="dc400074" sha1="70093ef56e0784173a06da1ac781bb9d8c4e7fc5" region="cpu1" offset="1000"/>
+		<rom name="1672a" size="2048" crc="2caf6f7e" sha1="200119260f78bb1c5389707b3ceedfbc1ae43549" region="cpu1" offset="1800"/>
+		<rom name="1673a" size="2048" crc="1495ce3d" sha1="3189f8061961d90a52339c855c06e81f4537fb2b" region="cpu1" offset="2000"/>
+		<rom name="1674a" size="2048" crc="ab7fc5d9" sha1="b2d9241d83d175ead4da36d7311a41a5f972e06a" region="cpu1" offset="2800"/>
+		<rom name="1675a" size="2048" crc="cf5e5016" sha1="78a3f1e4a905515330d4737ac38576ac6e0d8611" region="cpu1" offset="3000"/>
+		<rom name="1676a" size="2048" crc="b61a3ab3" sha1="0f4ef5c7fe299ad20fa4637260282a733f1cf461" region="cpu1" offset="3800"/>
+		<rom name="1677a" size="2048" crc="bc0273b1" sha1="8e8d8830f17b9fa6d45d98108ca02d90c29de574" region="cpu1" offset="4000"/>
+		<rom name="1678b" size="2048" crc="7894da98" sha1="2de7c121ad847e51a10cb1b81aec84cc44a3d04c" region="cpu1" offset="4800"/>
+		<rom name="1679a" size="2048" crc="db865654" sha1="db4d5675b53ff2bbaf70090fd064e98862f4ad33" region="cpu1" offset="5000"/>
+		<rom name="1680a" size="2048" crc="2c2454de" sha1="74101806439c9faeba88ffe573fa4f93ffa0ba3c" region="cpu1" offset="5800"/>
+		<rom name="1681a" size="2048" crc="77028885" sha1="bc981620ebbfbe4e32b3b4d00504475634454c57" region="cpu1" offset="6000"/>
+		<rom name="1682a" size="2048" crc="babe5cf1" sha1="26219b7a26f818fee2fe579ec6fb0b16c6bf056f" region="cpu1" offset="6800"/>
+		<rom name="1683a" size="2048" crc="1b98b618" sha1="19854cb2741ba37c11ae6d429fa6c17ff930f5e5" region="cpu1" offset="7000"/>
+		<rom name="1684a" size="2048" crc="cb3ded3b" sha1="f1e886f4f71b0f6f2c11fb8b4921c3452fc9b2c0" region="cpu1" offset="7800"/>
+		<rom name="1685a" size="2048" crc="43016a79" sha1="ee22c1fe0c8df90d9215175104f8a796c3d2aed3" region="cpu1" offset="8000"/>
+		<rom name="1686a" size="2048" crc="a4397772" sha1="cadc95b869f5bf5dba7f03dfe5ae64a50899cced" region="cpu1" offset="8800"/>
+		<rom name="1687a" size="2048" crc="002f3bc4" sha1="7f3795a05d5651c90cdcd4d00c46d05178b433ea" region="cpu1" offset="9000"/>
+		<rom name="1688a" size="2048" crc="0326d87a" sha1="3a5ea4526db417b9e00b24b019c1c6016773c9e7" region="cpu1" offset="9800"/>
+		<rom name="1709a" size="2048" crc="f35ed1ec" sha1="dce95a862af0c6b67fb76b99fee0523d53b7551c" region="cpu1" offset="a000"/>
+		<rom name="1710a" size="2048" crc="6203be22" sha1="89731c7c88d0125a11368d707f566eb53c783266" region="cpu1" offset="a800"/>
+		<sample name="01.wav"/>
+		<sample name="02.wav"/>

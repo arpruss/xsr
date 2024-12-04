@@ -1,0 +1,28 @@
+	<game name="elecyoyo">
+		<description>The Electric Yo-Yo (set 1)</description>
+		<year>1982</year>
+		<manufacturer>Taito America Corporation</manufacturer>
+		<rom name="yy14" size="4096" crc="0d2edcb9" sha1="36e1a1aa81111f38e1c06a8174e7de406478cc67" region="cpu1" offset="a000"/>
+		<rom name="yy15" size="4096" crc="a91f01e3" sha1="7818299d25a0816b856e83fae02d8019e5e8b4a3" region="cpu1" offset="b000"/>
+		<rom name="yy16-1" size="4096" crc="2710f360" sha1="4a6210b07618fba261c38b7bf9a779598dd6bb3c" region="cpu1" offset="c000"/>
+		<rom name="yy17" size="4096" crc="25fd489d" sha1="ca7b8d1bcbc223fc0706c8f2e9f02821519b75e4" region="cpu1" offset="d000"/>
+		<rom name="yy18" size="4096" crc="0b6661c0" sha1="3e24acbfea1a3b83223d780ea34c83759a751175" region="cpu1" offset="e000"/>
+		<rom name="yy19-1" size="4096" crc="95b8b244" sha1="2852dcfc6a638118ee7fe60b957d8aa9a5a8984c" region="cpu1" offset="f000"/>
+		<rom name="yy5" size="4096" crc="3793fec5" sha1="d31f3ba6364755c98beb814b5e7d5541e8b4e1a0" region="cpu2" offset="a000"/>
+		<rom name="yy6" size="4096" crc="2e8b1265" sha1="6fb67b6a5b627bcbd10c72ac8c9e4d9f4dd7860f" region="cpu2" offset="b000"/>
+		<rom name="yy7" size="4096" crc="20f93411" sha1="126c27442a4e35d054a236c41930603241d08ccf" region="cpu2" offset="c000"/>
+		<rom name="yy8" size="4096" crc="926f90c8" sha1="dbdfc0e9184a4d9d44d04fdb8fed19b35a8edadc" region="cpu2" offset="d000"/>
+		<rom name="yy9" size="4096" crc="2f999480" sha1="582baf285cadf8431ff80f5b63a02fbbefb62e45" region="cpu2" offset="e000"/>
+		<rom name="yy10" size="4096" crc="b31d20e2" sha1="e2ba4e6b81a02c3c02353774eb63a72cdfe5f2c3" region="cpu2" offset="f000"/>
+		<rom name="yy27" size="2048" crc="5a2aa0f3" sha1="16c7c2db39f33ea3506e07312352ccbfe5528fbd" region="cpu3" offset="f800"/>
+		<rom name="yy101" size="2048" crc="3cf13038" sha1="29c1b309d9046087a50ca78a5f7cba694271af26" region="cpu4" offset="0"/>
+		<chip type="cpu" name="M6809" clock="1250000"/>
+		<chip type="cpu" name="M6809" clock="1250000"/>
+		<chip type="cpu" soundonly="yes" name="M6802" clock="921600"/>
+		<chip type="cpu" name="M68705" clock="1000000"/>
+		<chip type="audio" name="DAC"/>
+		<video screen="raster" orientation="vertical" width="240" height="256" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="2" control="joy4way" coins="3" service="yes" tilt="yes"/>
+		<driver status="good" color="good" sound="good" palettesize="1024"/>
+	</game>

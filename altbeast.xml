@@ -1,0 +1,25 @@
+	<game name="altbeast">
+		<description>Altered Beast (Version 1)</description>
+		<year>1988</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="11704" size="131072" crc="33bbcf07" sha1="534e5426580dbf72509dceb762b8b99766d3a739" region="cpu1" offset="1"/>
+		<rom name="11705" size="131072" crc="57dc5c7a" sha1="a5cc9b10a00778f5163fc915b956fa5d0d7a37ce" region="cpu1" offset="0"/>
+		<rom name="11674" size="131072" crc="a57a66d5" sha1="5103583d48997abad12a0c5fee26431c486ced52" region="gfx1" dispose="yes" offset="0"/>
+		<rom name="11675" size="131072" crc="2ef2f144" sha1="38d22d609db2d9b6067b5d12f6499436de4605cb" region="gfx1" dispose="yes" offset="20000"/>
+		<rom name="11676" size="131072" crc="0c04acac" sha1="87fe2a0dd9913f9550e9b4cbc7e7465b61640e07" region="gfx1" dispose="yes" offset="40000"/>
+		<rom name="epr11677.b1" size="131072" crc="a01425cd" sha1="72be5ec29e476601f9bf6aaedef9b73cedeb42f0" region="gfx2" offset="1"/>
+		<rom name="epr11681.b5" size="131072" crc="d9e03363" sha1="995a7c6a8f0c61468b57a3bb407461a2a3ae8adc" region="gfx2" offset="0"/>
+		<rom name="epr11678.b2" size="131072" crc="17a9fc53" sha1="85a9a605742ae5aab86db37189b9ee4d54c70e56" region="gfx2" offset="40001"/>
+		<rom name="epr11682.b6" size="131072" crc="e3f77c5e" sha1="6b3cb7918ab0c7c97a51cc5ea19ced3374ff3914" region="gfx2" offset="40000"/>
+		<rom name="epr11679.b3" size="131072" crc="14dcc245" sha1="1ca1b6e0f2b7bedad2a8ab70f52da8c54d40d3cf" region="gfx2" offset="80001"/>
+		<rom name="epr11683.b7" size="131072" crc="f9a60f06" sha1="0cffcfdb02733feaa869198b7e668c58b47c321a" region="gfx2" offset="80000"/>
+		<rom name="epr11680.b4" size="131072" crc="f43dcdec" sha1="2941500cf33afca487f19f2329033d5d17aad826" region="gfx2" offset="c0001"/>
+		<rom name="epr11684.b8" size="131072" crc="b20c0edb" sha1="6c8694d05e3adac37c9015037ab800233371db36" region="gfx2" offset="c0000"/>
+		<rom name="11671" size="32768" crc="2b71343b" sha1="8a657f787de2b9d5161ed2c109642a148348af09" region="cpu2" offset="0"/>
+		<rom name="opr11672" size="131072" crc="bbd7f460" sha1="bbc5c2219cb3a827d84062b19affd9780da2a3cf" region="cpu2" offset="10000"/>
+		<rom name="opr11673" size="131072" crc="400c4a36" sha1="de4bdfa91734410e0a7f6a16bf8336db172f458a" region="cpu2" offset="30000"/>
+		<chip type="cpu" name="68000" clock="10000000"/>
+		<chip type="cpu" soundonly="yes" name="Z80" clock="4000000"/>
+		<chip type="audio" name="YM2151" clock="4000000"/>
+		<chip type="audio" name="uPD7759"/>
+		<video screen="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3" refresh="60.000000"/>

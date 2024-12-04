@@ -1,0 +1,21 @@
+	<game name="colony7">
+		<description>Colony 7 (set 1)</description>
+		<year>1981</year>
+		<manufacturer>Taito</manufacturer>
+		<rom name="cs03.bin" size="4096" crc="7ee75ae5" sha1="1d268d83c2b0c7897d9e783f5da4e1d892709ba4" region="cpu1" offset="d000"/>
+		<rom name="cs02.bin" size="4096" crc="c60b08cb" sha1="8cf91a2c2c04199b2870bb11e10fa6ffef5b877f" region="cpu1" offset="e000"/>
+		<rom name="cs01.bin" size="4096" crc="1bc97436" sha1="326692de3491925bbeea9b0e880d9133f0e6440c" region="cpu1" offset="f000"/>
+		<rom name="cs06.bin" size="2048" crc="318b95af" sha1="cb276ef440436f6000a2d20252f3197a67965167" region="cpu1" offset="10000"/>
+		<rom name="cs04.bin" size="2048" crc="d740faee" sha1="aad164e72ebb0de18487c5397ea33d300cf93423" region="cpu1" offset="10800"/>
+		<rom name="cs07.bin" size="2048" crc="0b23638b" sha1="b577c0cefa3ea2df436ed0fa1efa8ecd04ff78b0" region="cpu1" offset="11000"/>
+		<rom name="cs05.bin" size="2048" crc="59e406a8" sha1="b64081ca83b6f57ac8fb71b1f8618083f19b99de" region="cpu1" offset="11800"/>
+		<rom name="cs08.bin" size="2048" crc="3bfde87a" sha1="f5047927833be97324c861aa93a8e95b457058c4" region="cpu1" offset="12000"/>
+		<rom name="cs11.bin" size="2048" crc="6032293c" sha1="dd2c6afc1149a879d49e93d1a2fa8e1f6d0b043b" region="cpu2" offset="f800"/>
+		<chip type="cpu" name="M6809" clock="1000000"/>
+		<chip type="cpu" soundonly="yes" name="M6808" clock="894750"/>
+		<chip type="audio" name="DAC"/>
+		<video screen="raster" orientation="vertical" width="240" height="292" aspectx="3" aspecty="4" refresh="60.000000"/>
+		<sound channels="1"/>
+		<input players="1" control="joy8way" buttons="3" coins="2"/>
+		<driver status="good" color="good" sound="good" palettesize="16"/>
+	</game>

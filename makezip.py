@@ -6,7 +6,7 @@ import zipfile
 import os
 
 if len(sys.argv)<3:
-    print("python3 makezip.py [-o outdir] [-a] game.rom game.xml|game.c [romname1 offset1 ...]")
+    print("python3 makezip.py [-o outdir] [-a] [-s N] game.rom game.xml|game.c [romname1 offset1 ...]")
     print(" -a   : adds to zip")
     print(" -s N : bytes to skip when scanning: should be a power of 2; larger is faster, but might miss things; default: 0x10")
     print(" romname1 offset1: if romname1 can't be found in game.rom, force it to be at offset1")
@@ -101,6 +101,7 @@ with open(sys.argv[2],"r") as xml:
                 if name in already:
                     print("%s already there" % name)
                     continue
+                print("searching for",name)
                 crc = int(get('crc',line),16)
                 size = int(get('size',line))
                 if size > len(data):
@@ -125,9 +126,9 @@ with open(sys.argv[2],"r") as xml:
                         break
                 else:
                     if skip <= 2:
-                        r = range(0,len(data)-2*size+1,1)
+                        r = range(0,len(data)-2*size+2,1)
                     else:
-                        r = tuple(range(0,len(data)-2*size+1,skip))+tuple(range(1,len(data)-2*size+1,skip))
+                        r = tuple(range(0,len(data)-2*size+2,skip))+tuple(range(1,len(data)-2*size+2,skip))
                     for i in r:
                         if size >= CACHE_MINIMUM and (i,size,2,FULL_BYTE) in crcCache:
                             c = crcCache[(i,size,2,FULL_BYTE)]
